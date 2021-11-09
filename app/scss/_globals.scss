@@ -1,0 +1,126 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Public Sans', sans-serif;
+
+
+  &.noscroll {
+    overflow: hidden;
+  }
+
+}
+
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: $darkBlue;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+  color: $lightBlue;
+}
+
+
+
+a,
+a:visited,
+a:hover {
+text-decoration: none;
+}
+
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+
+
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: 4.375rem;
+    padding-right: 1.2rem;
+    padding-bottom: 4.375rem;
+    padding-left: 1.2rem;
+  }
+  &--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+  }
+  &--px {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+  &--pt {
+    padding-top: 4.375rem;
+  }
+  &--pr {
+    padding-right: 1.2rem;
+  }
+  &--pb {
+    padding-bottom: 4.375rem;
+  }
+  &--pl {
+    padding-left: 1.2rem;
+  }
+}
+
+
+//Visivility
+
+.hide-for-mobile {
+  @include breakpoint-down("medium") {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up("large") {
+    display: none;
+  }
+}
