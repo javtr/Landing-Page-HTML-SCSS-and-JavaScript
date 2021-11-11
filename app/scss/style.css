@@ -100,7 +100,7 @@ h2,
 h3 {
   font-weight: 300;
   line-height: 1.15;
-  color: #2F4552;
+  color: #566D74;
   margin-top: 0px;
 }
 
@@ -117,7 +117,7 @@ h2 {
 p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
-  color: #566D74;
+  color: #bebebe;
 }
 
 a,
@@ -157,9 +157,16 @@ a:hover {
 
 .container--pall {
   padding-top: 4.375rem;
-  padding-right: 1.2rem;
+  padding-right: 1.5rem;
   padding-bottom: 4.375rem;
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container--py {
@@ -167,25 +174,65 @@ a:hover {
   padding-bottom: 4.375rem;
 }
 
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 .container--px {
-  padding-right: 1.2rem;
-  padding-left: 1.2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .container--pt {
   padding-top: 4.375rem;
 }
 
+@media (min-width: 64em) {
+  .container--pt {
+    padding-top: 6rem;
+  }
+}
+
 .container--pr {
-  padding-right: 1.2rem;
+  padding-right: 1.5rem;
 }
 
 .container--pb {
   padding-bottom: 4.375rem;
 }
 
+@media (min-width: 64em) {
+  .container--pb {
+    padding-bottom: 6rem;
+  }
+}
+
 .container--pl {
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+button,
+.button {
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  background: -webkit-gradient(linear, left top, right top, from(#00ADD3), to(#2FEDCB));
+  background: linear-gradient(to right, #00ADD3, #2FEDCB);
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 0.875rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 63.9375em) {
@@ -327,7 +374,7 @@ a:hover {
 .header__links a {
   position: relative;
   font-size: 1.25rem;
-  color: #566D74;
+  color: #bebebe;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
@@ -352,7 +399,7 @@ a:hover {
 }
 
 .header__links a:hover {
-  color: #2F4552;
+  color: #566D74;
 }
 
 .header__links a:hover::before {
@@ -372,7 +419,7 @@ a:hover {
 }
 
 .header__menu a {
-  color: #2F4552;
+  color: #566D74;
   display: block;
   text-align: center;
   padding: 0.625rem;
@@ -384,7 +431,108 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2F4552), to(transparent));
-  background-image: linear-gradient(#2F4552, transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#566D74), to(transparent));
+  background-image: linear-gradient(#566D74, transparent);
+}
+
+.hero {
+  background-color: #FBFBFB;
+}
+
+@media (min-width: 64em) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.hero__image {
+  position: relative;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 41rem;
+    background-image: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 150%;
+    background-size: 122%;
+    background-position: 0% 83%;
+  }
+}
+
+.hero__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/image-mockups.png");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 22%;
+  }
+}
+
+.hero__text {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
