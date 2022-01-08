@@ -1,7 +1,5 @@
 .hero {
-
   background-color: $lightGray;
-
 
   .container {
 
@@ -10,8 +8,6 @@
       align-items: center;
     }
   }
-
-
 
   &__image {
     position: relative;
@@ -31,8 +27,8 @@
       order: 2;
       height: 41rem;
       background-image: none;
-    }
 
+    }
 
     &::before { 
 
@@ -47,9 +43,9 @@
         background-size: 122%;
         background-position: 0% 83%;
       }
+
+
     }
-
-
 
     &::after {
       content: "";
@@ -73,9 +69,9 @@
         left: 22%;
       }
     }
+
+
   }
-
-
 
 
 
