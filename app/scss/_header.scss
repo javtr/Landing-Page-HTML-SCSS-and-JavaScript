@@ -38,7 +38,7 @@
 
     &__lang{
         position: absolute;
-        right: 90px;
+        right: 75px;
         width: 30px;
         height: 30px;
         background-color: $blue;
@@ -125,19 +125,12 @@
 }
 
 
-
-
-  
-
-
-
-
     &__toggle{
 
         span{ 
             display: block;
             height: 3px;
-            width: 35px;
+            width: 45px;
             background-color: $darkGray;
             transition: all 300ms ease-in-out;
             transform-origin: 2px 1px;

@@ -49,7 +49,7 @@ h2 {
 
 p {
   line-height: 1.5;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.1875rem;
   color: $lightBlue;
 }
 
@@ -86,14 +86,17 @@ text-decoration: none;
   margin: 0 auto;
 
   &--pall {
-    padding-top: 4.375rem;
-    padding-right: 1.5rem;
-    padding-bottom: 4.375rem;
-    padding-left: 1.5rem;
+    padding-top: 3.125rem;
+    padding-right: 1rem;
+    padding-bottom: 3.125rem;
+    padding-left: 1rem;
 
     @include breakpoint-up(large) {
       padding-top: 6rem;
       padding-bottom: 6rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+  
     }
   }
   &--py {
@@ -106,8 +109,17 @@ text-decoration: none;
     }
   }
   &--px {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+
+    @include breakpoint-up(large) {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      }
+
+
   }
   &--pt {
     padding-top: 4.375rem;
