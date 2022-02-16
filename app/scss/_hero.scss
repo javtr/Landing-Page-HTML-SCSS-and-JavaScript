@@ -78,6 +78,7 @@
 
   &__text {
     text-align: center;
+    color: $lightBlue;
 
     @include breakpoint-up(large){
       flex: 2;

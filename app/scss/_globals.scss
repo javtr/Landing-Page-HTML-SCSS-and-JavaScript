@@ -1,7 +1,6 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
-
 }
 
 *,
@@ -12,19 +11,15 @@ html {
   margin: 0;
 }
 
-
 body {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
 
   overflow-x: hidden;
-
 
   &.noscroll {
     overflow: hidden;
   }
-
 }
-
 
 h1,
 h2,
@@ -38,29 +33,45 @@ h3 {
 h1 {
   font-size: 2.31rem;
   margin-bottom: 1.5rem;
-
 }
 
 h2 {
   font-size: 1.875rem;
   margin-bottom: 1.5625rem;
-
 }
 
 p {
   line-height: 1.5;
   margin-bottom: 2.1875rem;
-  color: $lightBlue;
+  // color: $lightBlue;
 }
 
+.section-title {
+  font-size: 1.0625rem;
+  line-height: 1.2;
+  color: $darkGray;
+  margin-bottom: 0.5rem;
+}
+
+.section-text {
+  padding-top: 1.25rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+
+  color: $mediumDarkGray;
+  text-align: left;
+
+  @include breakpoint-up(medium) {
+    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+  }
+}
 
 
 a,
 a:visited,
 a:hover {
-text-decoration: none;
+  text-decoration: none;
 }
-
 
 .flex {
   display: flex;
@@ -78,11 +89,9 @@ text-decoration: none;
   }
 }
 
-
-
 .container {
   max-width: 69.375rem;
-  
+
   margin: 0 auto;
 
   &--pall {
@@ -96,7 +105,6 @@ text-decoration: none;
       padding-bottom: 6rem;
       padding-right: 1.5rem;
       padding-left: 1.5rem;
-  
     }
   }
   &--py {
@@ -109,17 +117,13 @@ text-decoration: none;
     }
   }
   &--px {
-
     padding-right: 1rem;
     padding-left: 1rem;
-    
 
     @include breakpoint-up(large) {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
-      }
-
-
+    }
   }
   &--pt {
     padding-top: 4.375rem;
@@ -143,7 +147,6 @@ text-decoration: none;
   }
 }
 
-
 button,
 .button {
   display: inline-block;
@@ -161,8 +164,6 @@ button,
     opacity: 0.75;
   }
 }
-
-
 
 //Visivility
 

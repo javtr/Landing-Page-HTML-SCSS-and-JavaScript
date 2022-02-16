@@ -1,20 +1,28 @@
 .feature {
-    background-color: $mediumGray;
-    text-align: center;
-  
-    @include breakpoint-up(medium){
-      text-align: left;
-    }
-  
-  
-    &__grid {
-      background-color: $lightGray;
-      
-      @include breakpoint-up(medium){
-        // display: flex;
-        // flex-wrap: wrap;     
-      }
-    }
-  
+  background-color: $mediumGray;
+  text-align: center;
 
+  @include breakpoint-up(medium) {
+    text-align: left;
   }
+
+  &__grid {
+    background-color: $lightGray;
+
+
+    }
+
+    &-video {
+      position: relative;
+
+      video {
+        width: 100%;
+      }
+
+
+    @include breakpoint-up(medium) {
+      // display: flex;
+      // flex-wrap: wrap;
+    }
+  }
+}
