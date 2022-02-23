@@ -2,11 +2,30 @@
   background-color: $white;
 
   &__grid {
+
+
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
+    
+    
     text-align: center;
-    margin-top: 75px;
+    margin-top: 3.125rem;
+    padding: 2.1875rem;
+
+
+    @include breakpoint-up(medium){
+      flex: 0 0 50%;
+    }
+
+    @include breakpoint-up(large){
+      flex: 1;
+    }
+
 
   }
 
@@ -18,11 +37,9 @@
     margin-bottom: 20px;
 
     img {
-      width: 85px;
-      height: 85px;
-      filter:invert(100%);
+      width: 60px;
+      height: 60px;
+      filter: invert(100%);
     }
-
-
   }
 }

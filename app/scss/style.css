@@ -129,6 +129,7 @@ h3 {
   font-weight: 300;
   line-height: 1.15;
   color: #8A9599;
+  text-align: center;
 }
 
 .section-text {
@@ -559,9 +560,36 @@ button:hover,
   background-color: #FFFFFF;
 }
 
+@media (min-width: 40em) {
+  .advantage__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .advantage__item {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 3.125rem;
+  padding: 2.1875rem;
+}
+
+@media (min-width: 40em) {
+  .advantage__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .advantage__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .advantage__icon {
@@ -574,33 +602,10 @@ button:hover,
 }
 
 .advantage__icon img {
-  width: 85px;
-  height: 85px;
+  width: 60px;
+  height: 60px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
-}
-
-.feature {
-  background-color: #D2D2D2;
-  text-align: center;
-}
-
-@media (min-width: 40em) {
-  .feature {
-    text-align: left;
-  }
-}
-
-.feature__grid {
-  background-color: #F4F4F4;
-}
-
-.feature-video {
-  position: relative;
-}
-
-.feature-video video {
-  width: 100%;
 }
 
 .articles {
@@ -693,7 +698,7 @@ button:hover,
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: 'logo links1 links2 cta' 'social links1 links2 copyright';
+        grid-template-areas: 'logo links1 links2 cta' 'social links1 links2 copyright';
     gap: 1rem;
     justify-items: start;
   }
