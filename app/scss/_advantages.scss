@@ -1,0 +1,28 @@
+.advantage {
+  background-color: $white;
+
+  &__grid {
+  }
+
+  &__item {
+    text-align: center;
+    margin-top: 75px;
+
+  }
+
+  &__icon {
+    display: inline-block;
+    background: linear-gradient(to right, $blue, $green-blue);
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    img {
+      width: 85px;
+      height: 85px;
+      filter:invert(100%);
+    }
+
+
+  }
+}

@@ -1,5 +1,5 @@
 .hero {
-  background-color: $lightGray;
+  background-color: $white;
 
   .container {
 
@@ -79,6 +79,11 @@
   &__text {
     text-align: center;
     color: $lightBlue;
+
+    &-head{
+      margin-bottom: 4.6875rem;
+    }
+
 
     @include breakpoint-up(large){
       flex: 2;

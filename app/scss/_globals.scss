@@ -13,59 +13,117 @@ html {
 
 body {
   font-family: "Public Sans", sans-serif;
-
   overflow-x: hidden;
-
   &.noscroll {
     overflow: hidden;
   }
 }
 
+
 h1,
 h2,
-h3 {
+h3,
+.section-title {
   font-weight: 300;
   line-height: 1.15;
   color: $darkBlue;
-  margin-top: 0px;
 }
 
-h1 {
-  font-size: 2.31rem;
-  margin-bottom: 1.5rem;
-}
-
+h1,
 h2 {
   font-size: 1.875rem;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
-p {
-  line-height: 1.5;
-  margin-bottom: 2.1875rem;
-  // color: $lightBlue;
+h3{
+  font-size: 1.625rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
 }
 
 .section-title {
-  font-size: 1.0625rem;
-  line-height: 1.2;
-  color: $darkGray;
-  margin-bottom: 0.5rem;
-}
-
-.section-text {
-  padding-top: 1.25rem;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
-
-  color: $mediumDarkGray;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
   text-align: left;
 
-  @include breakpoint-up(medium) {
-    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
-  }
 }
 
+.headline-text{
+  font-size: 1.09375rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: $lightBlue;
+}
+
+.section-text{
+  font-size: 1.09375rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: $darkGray;
+
+  &--left{
+    text-align: left;
+  }
+
+  &--center{
+    text-align: center;
+  }  
+
+  @include breakpoint-up(medium) {
+  }
+
+}
+
+
+
+
+//-------------------------
+// h1,
+// h2,
+// h3 {
+//   font-weight: 300;
+//   line-height: 1.15;
+//   color: $darkBlue;
+//   margin-top: 0px;
+// }
+
+// h1 {
+//   font-size: 2.31rem;
+//   margin-bottom: 1.5rem;
+// }
+
+// h2 {
+//   font-size: 1.875rem;
+//   margin-bottom: 1.5625rem;
+// }
+
+// p {
+//   line-height: 1.5;
+//   margin-bottom: 2.1875rem;
+//   // color: $lightBlue;
+// }
+
+// .section-title {
+//   font-size: 1.0625rem;
+//   line-height: 1.2;
+//   color: $darkGray;
+//   margin-bottom: 0.5rem;
+// }
+
+// .section-text {
+//   padding-top: 1.25rem;
+//   padding-right: 1.25rem;
+//   padding-left: 1.25rem;
+
+//   color: $mediumDarkGray;
+//   text-align: left;
+
+//   @include breakpoint-up(medium) {
+//     padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+//   }
+// }
+//-------------------------
 
 a,
 a:visited,
@@ -89,63 +147,93 @@ a:hover {
   }
 }
 
-.container {
-  max-width: 69.375rem;
 
+
+
+
+
+
+.container {
+  max-width: 90rem;
   margin: 0 auto;
 
-  &--pall {
-    padding-top: 3.125rem;
-    padding-right: 1rem;
-    padding-bottom: 3.125rem;
-    padding-left: 1rem;
+  &--headline{
+    padding: 70px 30px 50px 30px;
+  }
 
-    @include breakpoint-up(large) {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-    }
+  &--description{
+    padding: 50px 16px 50px 16px;
   }
-  &--py {
-    padding-top: 4.375rem;
-    padding-bottom: 4.375rem;
 
-    @include breakpoint-up(large) {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-    }
+  &--advantage{
+    padding: 50px 50px 50px 50px;
   }
-  &--px {
-    padding-right: 1rem;
-    padding-left: 1rem;
 
-    @include breakpoint-up(large) {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-    }
-  }
-  &--pt {
-    padding-top: 4.375rem;
-
-    @include breakpoint-up(large) {
-      padding-top: 6rem;
-    }
-  }
-  &--pr {
-    padding-right: 1.5rem;
-  }
-  &--pb {
-    padding-bottom: 4.375rem;
-
-    @include breakpoint-up(large) {
-      padding-bottom: 6rem;
-    }
-  }
-  &--pl {
-    padding-left: 1.5rem;
-  }
 }
+
+
+
+
+// .container {
+//   max-width: 69.375rem;
+//   margin: 0 auto;
+
+//   &--pall {
+//     padding-top: 3.125rem;
+//     padding-right: 1rem;
+//     padding-bottom: 3.125rem;
+//     padding-left: 1rem;
+
+//     @include breakpoint-up(large) {
+//       padding-top: 6rem;
+//       padding-bottom: 6rem;
+//       padding-right: 1.5rem;
+//       padding-left: 1.5rem;
+//     }
+//   }
+//   &--py {
+//     padding-top: 4.375rem;
+//     padding-bottom: 4.375rem;
+
+//     @include breakpoint-up(large) {
+//       padding-top: 6rem;
+//       padding-bottom: 6rem;
+//     }
+//   }
+//   &--px {
+//     padding-right: 1rem;
+//     padding-left: 1rem;
+
+//     @include breakpoint-up(large) {
+//       padding-right: 1.5rem;
+//       padding-left: 1.5rem;
+//     }
+//   }
+//   &--pt {
+//     padding-top: 4.375rem;
+
+//     @include breakpoint-up(large) {
+//       padding-top: 6rem;
+//     }
+//   }
+//   &--pr {
+//     padding-right: 1.5rem;
+//   }
+//   &--pb {
+//     padding-bottom: 4.375rem;
+
+//     @include breakpoint-up(large) {
+//       padding-bottom: 6rem;
+//     }
+//   }
+//   &--pl {
+//     padding-left: 1.5rem;
+//   }
+// }
+
+
+
+
 
 button,
 .button {
