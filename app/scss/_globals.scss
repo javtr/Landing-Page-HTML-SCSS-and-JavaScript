@@ -19,7 +19,6 @@ body {
   }
 }
 
-
 h1,
 h2,
 h3,
@@ -36,7 +35,7 @@ h2 {
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 1.625rem;
   margin-bottom: 1.25rem;
   text-align: center;
@@ -46,86 +45,33 @@ h3{
   font-size: 1.125rem;
   margin-bottom: 1.25rem;
   text-align: left;
-
 }
 
-.headline-text{
+.headline-text {
   font-size: 1.09375rem;
   font-weight: 300;
   line-height: 1.15;
   color: $lightBlue;
   text-align: center;
-
 }
 
-.section-text{
+.section-text {
   font-size: 1.09375rem;
   font-weight: 300;
   line-height: 1.15;
   color: $darkGray;
 
-  &--left{
+  &--left {
     text-align: left;
   }
 
-  &--center{
+  &--center {
     text-align: center;
-  }  
+  }
 
   @include breakpoint-up(medium) {
   }
-
 }
-
-
-
-
-//-------------------------
-// h1,
-// h2,
-// h3 {
-//   font-weight: 300;
-//   line-height: 1.15;
-//   color: $darkBlue;
-//   margin-top: 0px;
-// }
-
-// h1 {
-//   font-size: 2.31rem;
-//   margin-bottom: 1.5rem;
-// }
-
-// h2 {
-//   font-size: 1.875rem;
-//   margin-bottom: 1.5625rem;
-// }
-
-// p {
-//   line-height: 1.5;
-//   margin-bottom: 2.1875rem;
-//   // color: $lightBlue;
-// }
-
-// .section-title {
-//   font-size: 1.0625rem;
-//   line-height: 1.2;
-//   color: $darkGray;
-//   margin-bottom: 0.5rem;
-// }
-
-// .section-text {
-//   padding-top: 1.25rem;
-//   padding-right: 1.25rem;
-//   padding-left: 1.25rem;
-
-//   color: $mediumDarkGray;
-//   text-align: left;
-
-//   @include breakpoint-up(medium) {
-//     padding: 1.875rem 1.875rem 2.5rem 1.875rem;
-//   }
-// }
-//-------------------------
 
 a,
 a:visited,
@@ -149,30 +95,44 @@ a:hover {
   }
 }
 
-
-
-
-
-
-
 .container {
   max-width: 90rem;
   margin: 0 auto;
 
-  &--headline{
+  &--navbar {
+    padding: 0px 16px 0px 16px;
+  }
+
+  &--headline {
     padding: 70px 30px 50px 30px;
   }
 
-  &--description{
+  &--description {
     padding: 50px 16px 50px 16px;
   }
 
-  &--advantage{
-    padding: 50px 50px 50px 50px;
+  &--advantage {
+
+    padding: 50px;
+    
+    @include breakpoint-up(medium) {
+      padding: 30px;
+    }
+
   }
 
-}
 
+  &--indicators-header{
+    padding: 35px 16px 35px 16px;
+  }
+
+  &--indicators{
+    padding: 0px 16px 50px 16px;
+
+  }
+
+
+}
 
 
 
@@ -232,10 +192,6 @@ a:hover {
 //     padding-left: 1.5rem;
 //   }
 // }
-
-
-
-
 
 button,
 .button {

@@ -1,0 +1,23 @@
+.indicators{
+
+
+    .labels{
+        display: flex;
+        flex-wrap: wrap;
+        flex: auto;
+
+        .label-item{
+            font-size: $font-sm;
+            display: block;
+            padding: 7px;
+            background-color: bisque;
+            margin: 5px;
+
+
+        }
+
+
+    }
+
+
+}

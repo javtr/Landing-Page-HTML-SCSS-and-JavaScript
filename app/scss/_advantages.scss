@@ -6,7 +6,7 @@
 
     @include breakpoint-up(medium) {
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
     }
   }
 
@@ -20,8 +20,8 @@
 
 
     @include breakpoint-up(medium){
-      flex: 0 0 50%;
-      padding: 2.1875rem;
+      flex: 1 1 auto;
+      padding: 1.25rem;
     }
 
     @include breakpoint-up(large){
