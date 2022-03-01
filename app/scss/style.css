@@ -112,6 +112,13 @@ h2 {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  h1,
+  h2 {
+    font-size: 2.8125rem;
+  }
+}
+
 h3 {
   font-size: 1.625rem;
   margin-bottom: 1.25rem;
@@ -122,6 +129,12 @@ h3 {
   font-size: 1.125rem;
   margin-bottom: 1.25rem;
   text-align: left;
+}
+
+@media (min-width: 64em) {
+  .section-title {
+    font-size: 1.875rem;
+  }
 }
 
 .headline-text {
@@ -145,6 +158,12 @@ h3 {
 
 .section-text--center {
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .section-text {
+    font-size: 1.25rem;
+  }
 }
 
 a,
@@ -208,8 +227,20 @@ a:hover {
   padding: 35px 16px 35px 16px;
 }
 
+@media (min-width: 64em) {
+  .container--indicators-header {
+    padding: 75px 65px 75px 65px;
+  }
+}
+
 .container--indicators {
   padding: 0px 16px 50px 16px;
+}
+
+@media (min-width: 64em) {
+  .container--indicators {
+    padding: 0px 60px 50px 60px;
+  }
 }
 
 button,
@@ -247,6 +278,8 @@ button:hover,
 
 .header {
   background-color: #f4f4f4;
+  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
 }
@@ -700,7 +733,28 @@ button:hover,
   font-size: 0.8125rem;
 }
 
-.indicators .labels {
+.indicators-header {
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.indicators-header__tittle {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #516580;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+@media (min-width: 64em) {
+  .indicators-header__tittle {
+    font-size: 4.0625rem;
+  }
+}
+
+.indicators-header .labels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,12 +765,82 @@ button:hover,
           flex: auto;
 }
 
-.indicators .labels .label-item {
+.indicators-header .labels__item {
   font-size: 0.875rem;
   display: block;
   padding: 7px;
-  background-color: bisque;
   margin: 5px;
+}
+
+@media (min-width: 64em) {
+  .indicators-header .labels__item {
+    font-size: 1.875rem;
+    padding: 16px;
+    margin: 9px;
+  }
+}
+
+.indicators-header .labels__item:nth-child(4n + 1) {
+  background-color: #23798C;
+  color: #f4f4f4;
+}
+
+.indicators-header .labels__item:nth-child(4n + 2) {
+  background-color: #F28F38;
+  color: #1c2d45;
+}
+
+.indicators-header .labels__item:nth-child(4n + 3) {
+  background-color: #BF3C30;
+  color: #f4f4f4;
+}
+
+.indicators-header .labels__item:nth-child(4n + 4) {
+  background-color: #f8debd;
+  color: #1c2d45;
+}
+
+.indicators {
+  background-color: #ffffff;
+}
+
+.indicators__card {
+  background-color: #ffffff;
+  border-radius: 0.6875rem;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 3.125rem;
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 64em) {
+  .indicators__card {
+    margin-top: 5.75rem;
+  }
+}
+
+.indicators__video video {
+  width: 100%;
+}
+
+.indicators__text {
+  margin: 20px 25px 50px 25px;
+}
+
+.indicators__title2 {
+  margin: 0px 25px 20px 25px;
+}
+
+.indicators__image img {
+  width: 100%;
+}
+
+.indicators__button {
+  text-align: center;
+}
+
+.indicators__button a {
+  margin-bottom: 3.125rem;
 }
 
 .footer {
