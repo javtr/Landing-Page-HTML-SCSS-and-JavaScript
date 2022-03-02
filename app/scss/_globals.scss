@@ -146,6 +146,27 @@ a:hover {
       padding: 0px 60px 50px 60px;
     }
   }
+
+  &--buy-header {
+    padding: 50px 30px;
+
+    @include breakpoint-up("large") {
+      padding: 0px 60px 50px 60px;
+    }
+  }
+
+  &--buy {
+    padding: 50px 16px;
+
+    @include breakpoint-up("large") {
+      padding: 0px 60px 50px 60px;
+    }
+  }
+
+
+
+
+
 }
 
 // .container {

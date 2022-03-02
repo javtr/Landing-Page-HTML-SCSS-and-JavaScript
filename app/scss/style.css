@@ -243,6 +243,26 @@ a:hover {
   }
 }
 
+.container--buy-header {
+  padding: 50px 30px;
+}
+
+@media (min-width: 64em) {
+  .container--buy-header {
+    padding: 0px 60px 50px 60px;
+  }
+}
+
+.container--buy {
+  padding: 50px 16px;
+}
+
+@media (min-width: 64em) {
+  .container--buy {
+    padding: 0px 60px 50px 60px;
+  }
+}
+
 button,
 .button {
   display: inline-block;
@@ -841,6 +861,42 @@ button:hover,
 
 .indicators__button a {
   margin-bottom: 3.125rem;
+}
+
+.buy-header {
+  color: #f4f4f4;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.buy-header__title {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #516580;
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .buy-header__title {
+    font-size: 2.8125rem;
+  }
+}
+
+.buy-header__subtitle {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #8a9599;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .buy-header__subtitle {
+    font-size: 1.875rem;
+  }
 }
 
 .footer {
