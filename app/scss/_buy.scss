@@ -1,76 +1,210 @@
-.buy-header{
-    color: $lightGray;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-    
-    &__title{
+.buy-header {
+  color: $lightGray;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 
-        font-weight: 300;
-        line-height: 1.15;
-        color: $darkBlue;
-    
-        font-size: $font-xlg;
-        margin-bottom: 1.25rem;
-        text-align: center;
-    
-        @include breakpoint-up("large") {
-          font-size: $font-xxlg;
-        }
+  &__title {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
 
+    font-size: $font-xlg;
+    margin-bottom: 1.25rem;
+    text-align: center;
 
+    @include breakpoint-up("large") {
+      font-size: $font-xxlg;
     }
+  }
 
-    &__subtitle{
+  &__subtitle {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $lightBlue;
 
-        font-weight: 300;
-        line-height: 1.15;
-        color: $lightBlue;
-    
-        font-size: $font-med;
-        margin-bottom: 1.25rem;
-        text-align: center;
-    
-        @include breakpoint-up("large") {
-          font-size: $font-xlg;
-        }
+    font-size: $font-med;
+    margin-bottom: 1.25rem;
+    text-align: center;
 
-
-
-
+    @include breakpoint-up("large") {
+      font-size: $font-xlg;
     }
+  }
 }
 
+.buy {
+  &__card {
+    background-color: $white;
+    border-radius: 0.6875rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem 1.625rem 3.125rem 1.625rem;
 
-.buy{
+    @include breakpoint-up("large") {
+      padding: 5.3125rem 3.125rem;
+    }
+  }
 
-    &__card{
-      background-color: $white;
-      border-radius: 0.6875rem;
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-      padding: 2.5rem 1.625rem 3.125rem 1.625rem;
+  &__title {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $label2;
+
+    font-size: $font-xlg;
+    margin-bottom: 2.5rem;
+    text-align: center;
+
+    @include breakpoint-up("large") {
+      font-size: $font-xxlg;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    @include breakpoint-up("large") {
+      display: flex;
+    }
+  }
+
+  &__carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.75%;
+    grid-template-rows: [row1-start] 80% [row1-end row2-start] 20% [row2-end];
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-up("large") {
+      height: 100%;
+      flex: 1 1 60%;
     }
 
-    &__title{
+    img {
+      width: 100%;
+    }
 
+    &--item0 {
+      grid-column: 1 / 5;
+      grid-row: 1;
+    }
+
+    &--item1 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &--item2 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &--item3 {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    &--item4 {
+      grid-column: 4;
+      grid-row: 2;
+    }
+  }
+
+  &__info {
+    @include breakpoint-up("large") {
+      flex: 1 1 40%;
+      padding: 0px 30px;
+    }
+
+    &--subtitle {
       font-weight: 300;
       line-height: 1.15;
-      color: $label4;
-  
-      font-size: $font-xlg;
-      margin-bottom: 2.5rem;
-      text-align: center;
-  
+      color: $label2;
+
+      font-size: $font-sm;
+      margin-bottom: 0.625rem;
+      text-align: left;
+
       @include breakpoint-up("large") {
-        font-size: $font-xxlg;
+        font-size: $font-med;
       }
-
-
-
-
-
     }
 
+    &--title {
+      font-weight: 300;
+      line-height: 1.15;
+      color: $darkBlue;
 
+      font-size: $font-med;
+      margin-bottom: 1.25rem;
+      text-align: left;
 
+      @include breakpoint-up("large") {
+        font-size: $font-xlg;
+      }
+    }
 
+    &--text {
+      font-weight: 300;
+      line-height: 1.15;
+      color: $darkGray;
 
+      font-size: $font-med;
+      margin-bottom: 1.25rem;
+      text-align: left;
+
+      @include breakpoint-up("large") {
+        font-size: $font-lg;
+      }
+    }
+
+    &--list {
+      padding-left: 3.125rem;
+      list-style: square;
+      margin-bottom: 3.75rem;
+
+      li {
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkGray;
+
+        font-size: $font-med;
+        margin-bottom: 0.625rem;
+      }
+    }
+
+    &--price {
+      font-weight: 300;
+      line-height: 1.15;
+      color: $darkBlue;
+
+      font-size: $font-xlg;
+      margin-bottom: 1.25rem;
+      text-align: center;
+
+      @include breakpoint-up("large") {
+        font-size: $font-xlg;
+      }
+
+      span {
+        font-size: $font-med;
+        font-style: italic;
+      }
+    }
+
+    &--button {
+      // text-align: center;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      img {
+        height: 18px;
+        filter: invert(100%);
+      }
+    }
+  }
 }

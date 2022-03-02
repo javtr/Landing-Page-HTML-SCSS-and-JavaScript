@@ -148,10 +148,10 @@ a:hover {
   }
 
   &--buy-header {
-    padding: 50px 30px;
+    padding: 50px 16px;
 
     @include breakpoint-up("large") {
-      padding: 0px 60px 50px 60px;
+      padding: 100px 90px;
     }
   }
 
@@ -159,7 +159,7 @@ a:hover {
     padding: 50px 16px;
 
     @include breakpoint-up("large") {
-      padding: 0px 60px 50px 60px;
+      padding: 100px 60px;
     }
   }
 
@@ -226,8 +226,8 @@ a:hover {
 //   }
 // }
 
-button,
-.button {
+.button
+ {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: linear-gradient(to right, $blue, $green-blue);
@@ -243,6 +243,30 @@ button,
     opacity: 0.75;
   }
 }
+
+
+.button-buy {
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  // background: linear-gradient(to right, $blue, $green-blue);
+  background-color: $label2;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  color: $white;
+  font-weight: 400;
+  font-size: $font-sm;
+  transition: opacity 300ms ease-in-out;
+  width: 7.8125rem;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+
+
+
 
 //Visivility
 
