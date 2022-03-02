@@ -899,6 +899,29 @@ button:hover,
   }
 }
 
+.buy__card {
+  background-color: #ffffff;
+  border-radius: 0.6875rem;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem 1.625rem 3.125rem 1.625rem;
+}
+
+.buy__title {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #D95E32;
+  font-size: 1.875rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .buy__title {
+    font-size: 2.8125rem;
+  }
+}
+
 .footer {
   background-color: #1c2d45;
   color: #ffffff;
