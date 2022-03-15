@@ -11,6 +11,12 @@ html {
   margin: 0;
 }
 
+input {
+  all: unset;
+}
+
+
+
 body {
   font-family: "Public Sans", sans-serif;
   overflow-x: hidden;
@@ -163,6 +169,15 @@ a:hover {
     }
   }
 
+  &--contact {
+    padding: 50px 16px;
+
+    @include breakpoint-up("large") {
+      padding: 100px 60px;
+    }
+  }
+
+
 
 
 
@@ -258,6 +273,28 @@ a:hover {
   font-size: $font-sm;
   transition: opacity 300ms ease-in-out;
   width: 7.8125rem;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+
+.button-contact {
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  background: linear-gradient(to right, $blue, $green-blue);
+  // background-color: $label2;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: $white;
+  font-weight:normal;
+  font-size: $font-med;
+  transition: opacity 300ms ease-in-out;
+  width: 100%;
+  text-align: center;
+
 
   &:hover {
     opacity: 0.75;

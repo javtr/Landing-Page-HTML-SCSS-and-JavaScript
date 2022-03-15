@@ -87,6 +87,10 @@ html {
   margin: 0;
 }
 
+input {
+  all: unset;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   overflow-x: hidden;
@@ -263,6 +267,16 @@ a:hover {
   }
 }
 
+.container--contact {
+  padding: 50px 16px;
+}
+
+@media (min-width: 64em) {
+  .container--contact {
+    padding: 100px 60px;
+  }
+}
+
 .button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
@@ -298,6 +312,27 @@ a:hover {
 }
 
 .button-buy:hover {
+  opacity: 0.75;
+}
+
+.button-contact {
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  background: -webkit-gradient(linear, left top, right top, from(#00add3), to(#2fedcb));
+  background: linear-gradient(to right, #00add3, #2fedcb);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 1.125rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+.button-contact:hover {
   opacity: 0.75;
 }
 
@@ -1121,6 +1156,77 @@ a:hover {
   height: 18px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+.contact {
+  color: #ffffff;
+}
+
+.contact__card {
+  border-radius: 0.6875rem;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 60px 20px 40px 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #516580;
+  font-size: 1.875rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .contact__title {
+    font-size: 2.8125rem;
+  }
+}
+
+.contact__label-form {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #516580;
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
+  text-align: left;
+}
+
+@media (min-width: 64em) {
+  .contact__label-form {
+    font-size: 1.25rem;
+  }
+}
+
+.contact__input-form {
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: 1px solid #d2d2d2;
+  height: 3.125rem;
+  margin-bottom: 1.875rem;
+  color: #516580;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact__input-form-text {
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: 1px solid #d2d2d2;
+  height: 11.875rem;
+  margin-bottom: 3.75rem;
+  color: #516580;
+  padding: 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  line-height: 1.15;
+  font-size: 1.125rem;
+  resize: vertical;
 }
 
 .footer {
