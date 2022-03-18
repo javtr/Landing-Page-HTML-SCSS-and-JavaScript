@@ -185,6 +185,15 @@ a:hover {
     }
   }
 
+  &--payment {
+    padding: 40px 16px;
+
+    @include breakpoint-up("large") {
+      padding: 100px 60px;
+    }
+  }
+
+
 
 
 }

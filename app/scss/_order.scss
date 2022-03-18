@@ -1,0 +1,80 @@
+.payment {
+  background-color: $lightGray;
+
+  &__logo {
+    margin-bottom: 1.5625rem;
+  }
+
+  &__card-order {
+    background-color: $white;
+    border-radius: 0.6875rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+    @include breakpoint-up("large") {
+    }
+  }
+
+  &__header {
+    position: relative;
+    height: 3.75rem;
+    border-radius: 0.6875rem 0.6875rem 0 0;
+    background: linear-gradient(to right, $blue, $green-blue);
+  }
+
+  &__title {
+    position: absolute;
+    font-weight: bold;
+    line-height: 1.15;
+    color: $white;
+
+    font-size: 1.25rem;
+    left: 0.625rem;
+    bottom: 0.625rem;
+  }
+
+  &__date {
+    position: absolute;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $white;
+    font-size: 0.875rem;
+
+    right: 0.625rem;
+    bottom: 0.625rem;
+  }
+
+  &__content {
+    padding: 0 .625rem;
+
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: [row1-start] 30px [row1-end] auto [last-line];
+    margin: 60px auto 45px auto;
+    max-width: 31.25rem;
+  }
+
+  &__item {
+    line-height: 1.15;
+    color: $deepGray;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 5px;
+  }
+
+  &__item:nth-child(-n + 3) {
+    font-weight: bold;
+
+    background-color: $mediumGray;
+    border: 1px solid $grayishBlue;
+  }
+
+  &__item:nth-child(1n + 4) {
+    font-weight: 300;
+
+    background-color: $lightGray;
+    border: 1px solid $grayishBlue;
+  }
+}
