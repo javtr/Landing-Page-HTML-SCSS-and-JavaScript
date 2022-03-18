@@ -1314,6 +1314,7 @@ a:hover {
 
 .payment__content {
   padding: 0 .625rem;
+  text-align: center;
 }
 
 .payment__table {
@@ -1345,6 +1346,24 @@ a:hover {
   font-weight: 300;
   background-color: #f4f4f4;
   border: 1px solid #9698a6;
+}
+
+.payment__line {
+  background-color: #d2d2d2;
+  border: none;
+  height: 1px;
+  margin-bottom: 1.875rem;
+}
+
+.payment__total {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #606060;
+  font-size: 1.125rem;
+  text-align: right;
+  padding-bottom: 1.25rem;
+  max-width: 31.25rem;
+  margin: 0 auto;
 }
 
 .footer {

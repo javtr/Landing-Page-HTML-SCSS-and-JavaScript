@@ -45,6 +45,7 @@
 
   &__content {
     padding: 0 .625rem;
+    text-align: center;
 
   }
 
@@ -77,4 +78,29 @@
     background-color: $lightGray;
     border: 1px solid $grayishBlue;
   }
+
+  &__line{
+    background-color: $mediumGray;
+      border: none;
+      height: 1px;
+      margin-bottom: 1.875rem;
+  }
+
+  &__total{
+    font-weight: 300;
+    line-height: 1.15;
+    color: $deepGray;
+    font-size: 1.125rem;
+    text-align: right;
+    padding-bottom: 1.25rem;
+    max-width: 31.25rem;
+    margin: 0 auto;
+
+  }
+
+
+
+
+
+
 }
