@@ -2,13 +2,19 @@
   background-color: $lightGray;
 
   &__logo {
+    margin: 0 auto;
     margin-bottom: 1.5625rem;
+    max-width: 50rem;
+
   }
 
   &__card-order {
+    margin: 0 auto;
+    max-width: 50rem;
     background-color: $white;
     border-radius: 0.6875rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.875rem;
 
     @include breakpoint-up("large") {
     }
@@ -44,9 +50,8 @@
   }
 
   &__content {
-    padding: 0 .625rem;
+    padding: 0 0.625rem;
     text-align: center;
-
   }
 
   &__table {
@@ -79,14 +84,14 @@
     border: 1px solid $grayishBlue;
   }
 
-  &__line{
+  &__line {
     background-color: $mediumGray;
-      border: none;
-      height: 1px;
-      margin-bottom: 1.875rem;
+    border: none;
+    height: 1px;
+    margin-bottom: 1.875rem;
   }
 
-  &__total{
+  &__total {
     font-weight: 300;
     line-height: 1.15;
     color: $deepGray;
@@ -95,8 +100,129 @@
     padding-bottom: 1.25rem;
     max-width: 31.25rem;
     margin: 0 auto;
+  }
+
+  &__card-pay {
+    margin: 0 auto;
+    max-width: 50rem;
+    background-color: $white;
+    border-radius: 0.6875rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+
+
+    @include breakpoint-up("large") {
+
+      flex-direction: row-reverse;
+      
+    }
+
 
   }
+
+  &__pay {
+    padding: 2.5rem 0.625rem 0 0.625rem;
+    text-align: center;
+    flex: 1 1 50%;
+
+    @include breakpoint-up("large") {
+
+      padding: 3.125rem 1.25rem;
+      
+    }
+
+
+  }
+
+  &__pay-button {
+    margin-bottom: 2.5rem;
+
+    p {
+      text-align: center;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: normal;
+      font-style: italic;
+      font-stretch: normal;
+      color: #7b8388;
+      margin-top: .4375rem;
+
+      span {
+        font-weight: 300;
+        line-height: 1.15;
+        color: #21cd9c;
+        font-size: .875rem;
+      }
+    }
+
+
+
+  }
+
+  &__sep-line {
+    background-color: $mediumGray;
+    border: none;
+    height: 1px;
+    // margin-bottom: 1.875rem;
+
+    @include breakpoint-up("large") {
+
+      display: none;
+      
+    }
+
+  }
+
+
+
+
+  &__certified {
+    padding: 2.5rem 0.625rem 2.5rem 0.625rem;
+    text-align: center;
+    flex: 1 1 50%;
+
+    @include breakpoint-up("large") {
+
+      padding: 3.125rem 1.25rem;
+      
+    }
+
+
+  }
+
+  &__certified--img{
+    max-width: 500px;
+    margin: 0 auto;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  &__description{
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkGray;
+    font-size: $font-sm;
+    text-align: left;
+    padding: 15px;
+    font-style: italic;
+
+    p{
+      margin-top: 10px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
 
 
 

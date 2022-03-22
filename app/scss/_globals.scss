@@ -316,6 +316,38 @@ a:hover {
 }
 
 
+.button-teach {
+  display: inline-block;
+  padding: .875rem 2.1875rem;
+  background: #21cd9c;
+  // background-color: $label2;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: $white;
+  font-weight:normal;
+  font-size: 1rem;
+  transition: opacity 300ms ease-in-out;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

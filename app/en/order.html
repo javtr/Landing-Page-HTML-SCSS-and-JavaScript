@@ -91,18 +91,115 @@
         <div class="payment__card-pay">
           <div class="payment__pay">
             <div class="payment__pay-button">
-              <a href="" class="button--teach"></a>
+              <a href="" class="button-teach">Tarjeta de crédito</a>
+              <p>Desarrollado por <span>Teachable</span></p>
             </div>
             <div class="payment__line"></div>
             <div class="payment__pay-button">
-              <a href="" class="button--paypal"></a>
+              <div class="paypal">
+                <div class="content">
+                    <div class="accion">
+                        <div id="smart-button-container">
+                            <div style="text-align: center;">
+                                <div id="paypal-button-container"></div>
+                            </div>
+                        </div>
+                        <script
+                            src="https://www.paypal.com/sdk/js?client-id=sb"
+                            data-sdk-integration-source="button-factory"></script>
+                        <script>
+                            function initPayPalButton() {
+                                paypal.Buttons({
+                                    style: {
+                                        shape: 'rect',
+                                        color: 'blue',
+                                        layout: 'vertical',
+                                        label: 'paypal',
+                                    },
+                                    createOrder: function (data, actions) {
+
+                                        return actions.order.create({
+
+                                            purchase_units: [{ "amount": { "currency_code": "USD", "value": 192 } }]
+
+                                        });
+
+
+
+
+                                    },
+                                    onApprove: function (data, actions) {
+
+                                        return actions.order.capture().then(function (details) {
+
+
+                                            try {
+                                                var currentdate = new Date();
+                                                var datetime = "Last Sync: " + currentdate.getDate() + "/" +
+                                                    (currentdate.getMonth() + 1) +
+                                                    "/" +
+                                                    currentdate.getFullYear() +
+                                                    " @ " +
+                                                    currentdate.getHours() +
+                                                    ":" +
+                                                    currentdate.getMinutes() +
+                                                    ":" +
+                                                    currentdate.getSeconds() +
+
+                                                    "  -- Micro --  " +
+
+                                                    JSON.stringify(details, null, 2);
+
+
+                                                // (A) CREATE BLOB OBJECT
+                                                var myBlob = new Blob([datetime], { type: "text/plain" });
+                                                // (B) FORM DATA
+                                                var data = new FormData();
+                                                data.append("upfile", myBlob);
+                                                // (C) AJAX UPLOAD TO SERVER
+                                                fetch("../inserv/3b-upload.php", {
+                                                    method: "POST",
+                                                    body: data,
+                                                })
+                                                    .then((res) => { return res.text(); })
+                                                    .then((txt) => { console.log(txt); });
+                                            } catch (error) {
+
+                                            }
+
+
+
+
+
+                                            alert('Transacción exitosa by:  ' + details.payer.name.given_name + '! \n Aceptar para continuar el proceso');
+                                            window.location.href = "../php/form-licence/";
+                                        });
+                                    },
+                                    onError: function (err) {
+                                        console.log(err);
+                                    }
+                                }).render('#paypal-button-container');
+                            }
+                            initPayPalButton();
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
             </div>
           </div>
+
           <div class="payment__sep-line"></div>
 
           <div class="payment__certified">
-            <div class="payment__certified--img"></div>
-            <div class="payment__description"></div>
+            <div class="payment__certified--img">
+              <img src="../../images/paypal.png" alt="" />
+            </div>
+            <div class="payment__description">
+              <p>* Paga con tarjeta débito o crédito sin necesidad de crear cuenta Paypal</p>
+              <p>* Toda la transacción se realiza de forma segura a través de las plataformas Paypal o Teachable </p>
+            </div>
           </div>
         </div>
       </div>
