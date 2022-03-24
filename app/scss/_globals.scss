@@ -340,10 +340,33 @@ a:hover {
 }
 
 
+.button-buy-landing
+ {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: linear-gradient(to right, $blue, $green-blue);
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  color: $white;
+  font-weight: bold;
+  font-size: $font-med;
+  transition: opacity 300ms ease-in-out;
+
+
+    @include breakpoint-up("large") {
+      padding: 2rem 6rem;
+      font-size: $font-xlg;
+    }
+
+
+  &:hover {
+    opacity: 0.75;
 
 
 
-
+  }
+}
 
 
 
