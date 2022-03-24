@@ -5,7 +5,7 @@ img1 = document.querySelector(".buy__carousel--item1");
 img2 = document.querySelector(".buy__carousel--item2");
 
 let counter = 0;
-let speed = 1000;
+let speed = 5000;
 let move = true;
 
 img1.addEventListener("click", () => {
