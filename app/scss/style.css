@@ -1121,8 +1121,10 @@ a:hover {
 }
 
 .buy__carousel-conten {
-  display: block ruby;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
 }
 
 @media (min-width: 64em) {

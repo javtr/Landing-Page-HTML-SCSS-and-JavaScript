@@ -9,7 +9,7 @@ let speed = 5000;
 let move = true;
 
 img1.addEventListener("click", () => {
-  const size = carouselImages[0].clientWidth + 5;
+  const size = carouselImages[0].clientWidth ;
 
   carousel.style.transition = "transform 0.4s ease-in-out";
   carousel.style.transform = "translateX(" + -size * 1 + "px)";
@@ -26,7 +26,7 @@ img2.addEventListener("click", () => {
 
 moveslider = () => {
   if (move) {
-    const size = carouselImages[0].clientWidth + 5;
+    const size = carouselImages[0].clientWidth ;
     //   speed = 1000;
 
     carousel.style.transition = "transform 0.4s ease-in-out";
@@ -38,7 +38,7 @@ moveslider = () => {
 };
 
 carousel.addEventListener("transitionend", () => {
-  const size = carouselImages[0].clientWidth + 5;
+  const size = carouselImages[0].clientWidth ;
   //   speed = 1000;
 
   if (counter > 3) {
