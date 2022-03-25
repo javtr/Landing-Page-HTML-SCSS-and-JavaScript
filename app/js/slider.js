@@ -1,11 +1,11 @@
 carousel = document.querySelector(".buy__carousel-conten");
-carouselImages = document.querySelectorAll(".buy__carousel-conten img");
+carouselImages = document.querySelectorAll(".buy__carousel-img");
 
-img1 = document.querySelector(".buy__carousel--item1");
-img2 = document.querySelector(".buy__carousel--item2");
+img1 = document.querySelector(".bt1");
+img2 = document.querySelector(".bt2");
 
 let counter = 0;
-let speed = 5000;
+let speed = 2000;
 let move = true;
 
 img1.addEventListener("click", () => {
