@@ -89,6 +89,7 @@
     &-conten {
       grid-column: 1 / 5;
       grid-row: 1;
+      position: relative;
     }
 
     &--item1 {
@@ -224,3 +225,24 @@
     }
   }
 }
+
+
+
+.play{
+  position: absolute;
+  width: 13%;
+  text-align: center;
+  margin: 0 auto;
+  left: 10px;
+  filter: invert(100%);
+  bottom: 10px;
+  opacity: 20%;
+}
+
+
+.hide{
+  display: none;
+}
+
+
+
