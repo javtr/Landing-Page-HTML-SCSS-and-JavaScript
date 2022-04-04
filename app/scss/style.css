@@ -335,6 +335,25 @@ a:hover {
   opacity: 0.75;
 }
 
+.button-indicators {
+  display: inline-block;
+  padding: 0.875rem 1.25rem;
+  background: -webkit-gradient(linear, left top, right top, from(#00add3), to(#2fedcb));
+  background: linear-gradient(to right, #00add3, #2fedcb);
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.875rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.button-indicators:hover {
+  opacity: 0.75;
+}
+
 .button-contact {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
@@ -967,6 +986,18 @@ a:hover {
   margin: 20px 25px 50px 25px;
 }
 
+.indicators__text p {
+  margin-bottom: 15px;
+}
+
+.indicators__text--parrafo span {
+  color: #516580;
+}
+
+.indicators__text--parrafo:last-child() {
+  margin-bottom: 0;
+}
+
 .indicators__title2 {
   margin: 0px 25px 20px 25px;
 }
@@ -977,6 +1008,8 @@ a:hover {
 
 .indicators__button {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .indicators__button a {

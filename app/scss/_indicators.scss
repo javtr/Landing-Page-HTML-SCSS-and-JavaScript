@@ -66,14 +66,9 @@
     margin-top: 3.125rem;
     padding-top: 2.5rem;
 
-
     @include breakpoint-up("large") {
-        margin-top: 5.75rem;
-
-      }
-
-
-
+      margin-top: 5.75rem;
+    }
   }
 
   &__video {
@@ -85,6 +80,21 @@
 
   &__text {
     margin: 20px 25px 50px 25px;
+
+    p{
+      margin-bottom: 15px;
+    }
+
+    &--parrafo span{
+      color: $darkBlue;
+    }
+
+    &--parrafo:last-child(){
+      margin-bottom: 0;
+    }
+
+
+
   }
 
   &__title2 {
@@ -99,6 +109,8 @@
 
   &__button {
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 
     a {
       margin-bottom: 3.125rem;
