@@ -1,14 +1,37 @@
 .feature {
   background-color: $lightGray;
 
-  &h3 {
-    margin-bottom: 0.9375rem;
+  &__h2 {
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 60px;
+    }
   }
+
+
+
+  &__h3 {
+    margin-bottom: 0.9375rem;
+    text-align: left;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: 35px;
+    }
+  }
+
+
 
   &__image {
     margin-bottom: 0.9375rem;
+
+    text-align: center;
+
     img {
       width: 100%;
+
+      @include breakpoint-up(medium) {
+        width: 90%;
+      }
     }
   }
 
@@ -17,31 +40,25 @@
   }
 }
 
-
 .buy-section {
   background-color: $white;
 
-  &__title{
+  &__title {
     margin-bottom: 5rem;
   }
 
-
-  &__button{
+  &__button {
     text-align: center;
     margin-bottom: 5rem;
-
   }
 
-  &__image{
+  &__image {
     text-align: center;
   }
 
-  img{
+  img {
     width: 80%;
     margin-bottom: 3rem;
     max-width: 46.875rem;
   }
-
-
-
 }

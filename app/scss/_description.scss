@@ -4,6 +4,16 @@
   &__card {
     background-color: $white;
     border-radius: 0.6875rem;
+
+    @include breakpoint-up(medium) {
+      padding: 60px 60px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @include breakpoint-up(large) {
+      padding: 75px 90px;
+    }
   }
 
   &__video {
@@ -12,6 +22,41 @@
       border-radius: 0.6875rem 0.6875rem 0 0;
     }
   }
+
+  &__cont{
+
+
+
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+
+    &-content{
+
+
+      
+      @include breakpoint-up(large) {
+        flex: 1 1 40%;
+      } 
+
+    }
+
+    &-visual{
+
+
+      @include breakpoint-up(large) {
+        flex: 1 1 60%;
+      } 
+
+
+    }
+
+  }
+
+
+
 
   &__text {
     margin: 20px 25px 50px 25px;

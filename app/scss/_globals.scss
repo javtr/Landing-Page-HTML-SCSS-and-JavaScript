@@ -127,13 +127,21 @@ a:hover {
 
   &--description {
     padding: 50px 16px 50px 16px;
+
+    @include breakpoint-up(medium) {
+      padding: 50px 50px 50px 50px;
+    }    
   }
 
   &--advantage {
     padding: 50px;
 
-    @include breakpoint-up(medium) {
-      padding: 30px;
+    @include breakpoint-up(large) {
+      padding: 20px;
+    }
+
+    @include breakpoint-up(large) {
+      padding: 50px 140px;
     }
   }
 
@@ -147,6 +155,11 @@ a:hover {
 
   &--indicators {
     padding: 0px 16px 50px 16px;
+
+
+    @include breakpoint-up("medium") {
+      padding: 0px 30px 50px 30px;
+    }
 
     @include breakpoint-up("large") {
       padding: 0px 60px 50px 60px;
@@ -180,9 +193,21 @@ a:hover {
   &--feature {
     padding: 50px 16px;
 
-    @include breakpoint-up("large") {
-      padding: 100px 60px;
+
+    @include breakpoint-up(medium) {
+      padding: 70px 70px;
     }
+
+
+
+    @include breakpoint-up(large) {
+      padding: 100px 140px;
+    }
+
+
+    // @include breakpoint-up("large") {
+    //   padding: 100px 60px;
+    // }
   }
 
   &--payment {
