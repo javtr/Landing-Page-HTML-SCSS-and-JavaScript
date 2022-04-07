@@ -15,8 +15,6 @@ input {
   all: unset;
 }
 
-
-
 body {
   font-family: "Public Sans", sans-serif;
   overflow-x: hidden;
@@ -119,6 +117,8 @@ a:hover {
 
   &--navbar {
     padding: 0px 16px 0px 16px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   &--headline {
@@ -192,10 +192,6 @@ a:hover {
       padding: 100px 60px;
     }
   }
-
-
-
-
 }
 
 // .container {
@@ -255,8 +251,7 @@ a:hover {
 //   }
 // }
 
-.button
- {
+.button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: linear-gradient(to right, $blue, $green-blue);
@@ -272,7 +267,6 @@ a:hover {
     opacity: 0.75;
   }
 }
-
 
 .button-buy {
   display: inline-block;
@@ -293,9 +287,7 @@ a:hover {
   }
 }
 
-
-.button-indicators
- {
+.button-indicators {
   display: inline-block;
   padding: 0.875rem 1.25rem;
   background: linear-gradient(to right, $blue, $green-blue);
@@ -312,7 +304,6 @@ a:hover {
   }
 }
 
-
 .button-contact {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
@@ -322,29 +313,27 @@ a:hover {
   border: 0;
   cursor: pointer;
   color: $white;
-  font-weight:normal;
+  font-weight: normal;
   font-size: $font-med;
   transition: opacity 300ms ease-in-out;
   width: 100%;
   text-align: center;
-
 
   &:hover {
     opacity: 0.75;
   }
 }
 
-
 .button-teach {
   display: inline-block;
-  padding: .875rem 2.1875rem;
+  padding: 0.875rem 2.1875rem;
   background: #21cd9c;
   // background-color: $label2;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
   color: $white;
-  font-weight:normal;
+  font-weight: normal;
   font-size: 1rem;
   transition: opacity 300ms ease-in-out;
   width: 100%;
@@ -352,15 +341,12 @@ a:hover {
   font-weight: bold;
   font-style: italic;
 
-
   &:hover {
     opacity: 0.75;
   }
 }
 
-
-.button-buy-landing
- {
+.button-buy-landing {
   display: inline-block;
   padding: 1rem 3rem;
   background: linear-gradient(to right, $blue, $green-blue);
@@ -372,26 +358,15 @@ a:hover {
   font-size: $font-med;
   transition: opacity 300ms ease-in-out;
 
-
-    @include breakpoint-up("large") {
-      padding: 2rem 6rem;
-      font-size: $font-xlg;
-    }
-
+  @include breakpoint-up("large") {
+    padding: 2rem 6rem;
+    font-size: $font-xlg;
+  }
 
   &:hover {
     opacity: 0.75;
-
-
-
   }
 }
-
-
-
-
-
-
 
 //Visivility
 

@@ -18,23 +18,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
 ?>
 <!doctype html>
 <html lang="en">
-<!-- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Trading System for Delta and Volume Analysis - OTM trading System </title>
-    <link rel="shortcut icon" href="../../img/favicon_a.ico" type="image/x-icon">
-
-
-    <link rel="stylesheet" href="../../css/style-cont.css">
-    <link rel="stylesheet" href="../../css/style-footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head> -->
 
 
 <head>
@@ -53,8 +36,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
 
 
 <body>
-
-
 
     <!-- ====================== navbar =========================== -->
     <header class="header">
@@ -100,8 +81,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
       </div>
     </header>
 
-
-
     <!-- ====================== form =========================== -->
 
     <section class="contact">
@@ -137,11 +116,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
       </div>
     </section>
 
-
-
-
-
-    
     <!-- ====================== footer1 =========================== -->
     <footer class="footer">
       <div class="container">
@@ -224,9 +198,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
         >. Coded by <a href="#">Coder Coder</a>.
       </div>
     </footer>
-
-
-
 
     <script src="../../js/script.js"></script>
 </body>

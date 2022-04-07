@@ -1,0 +1,246 @@
+.form {
+  color: $white;
+
+  &__logo {
+    margin-bottom: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px 30px 30px;
+
+    img {
+      width: 80%;
+
+      @include breakpoint-up("medium") {
+
+        width: 50%;
+    
+      }
+
+    }
+
+    @include breakpoint-up("medium") {
+
+      width: 750px;
+  
+    }
+
+
+  }
+
+  &__card {
+    border-radius: 0.6875rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 70px 20px 40px 20px;
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+
+    @include breakpoint-up("medium") {
+
+      padding: 70px 60px 40px 60px;
+
+    }
+  }
+
+  &__header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    // height: 40px;
+    background-color: #e70045;
+    border-radius: 0.6875rem 0.6875rem 0 0;
+
+    & p {
+      font-weight: 300;
+      line-height: 1.15;
+      color: $white;
+
+      font-size: 12px;
+      padding: 10px;
+      text-align: left;
+
+      @include breakpoint-up("medium") {
+
+        font-size: 16px;
+        padding: 14px;
+
+      }
+
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
+
+    font-size: 1.875rem;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @include breakpoint-up("large") {
+      font-size: 2.8125rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkGray;
+
+    font-size: 14px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include breakpoint-up("medium") {
+
+      font-size: 18px;
+      margin-bottom: 60px;
+
+    }
+
+
+  }
+
+
+
+
+
+  &__numeral {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $deepGray;
+
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+    @include breakpoint-up("medium") {
+
+      font-size: 20px;
+
+    }
+
+  }
+
+  &__numeral2 {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $deepGray;
+
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+
+    @include breakpoint-up("medium") {
+
+      font-size: 20px;
+      margin-bottom:40px;
+      
+    }
+
+  }
+
+
+
+
+
+  &__image{
+    & img{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+  &--text{
+    font-weight: 300;
+    line-height: 1.15;
+    color: $lightBlue;
+
+    font-size: 12px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include breakpoint-up("medium") {
+
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+
+
+  }
+
+
+}
+
+
+
+
+
+  &__label-form {
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
+
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    text-align: left;
+
+    & span{
+      color : #e70045;
+    }
+
+
+    @include breakpoint-up("large") {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__input-form {
+    width: 100%;
+    border-radius: 0.3125rem;
+    border: 1px solid $mediumGray;
+    height: 3.125rem;
+    margin-bottom: 1.875rem;
+    color: $darkBlue;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  &__input-form-text {
+    width: 100%;
+    border-radius: 0.3125rem;
+    border: 1px solid $mediumGray;
+    height: 11.875rem;
+    margin-bottom: 3.75rem;
+    color: $darkBlue;
+    padding: 20px 20px;
+    box-sizing: border-box;
+
+    font-weight: 300;
+    line-height: 1.15;
+
+    font-size: 1.125rem;
+
+    resize: vertical;
+  }
+
+
+  &__note{
+    font-weight: 300;
+    line-height: 1.15;
+    color: $lightBlue;
+
+    font-size: 12px;
+    margin-top: 14px;
+    padding: 10px;
+    text-align: left;
+
+    @include breakpoint-up("large") {
+      font-size: 16px;
+    }
+
+
+  }
+
+}
