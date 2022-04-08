@@ -84,7 +84,7 @@
   }
 
   &__text {
-    margin: 20px 25px 50px 25px;
+    margin: 20px 15px 50px 15px;
 
     p{
       margin-bottom: 15px;
@@ -99,15 +99,37 @@
     }
 
 
+    @include breakpoint-up(medium) {
+    } 
+
+
+    @include breakpoint-up(large) {
+
+    }
+
+
+
 
   }
 
   &__title2 {
-    margin: 0px 25px 20px 25px;
+    margin: 0px 15px 20px 15px;
+
+    @include breakpoint-up(medium) {
+    } 
+
+
+    @include breakpoint-up(large) {
+
+    }
+
+
   }
 
   &__image {
     text-align: center;
+    margin: 0 10px;
+
     img {
       width: 100%;
 

@@ -298,12 +298,12 @@ a:hover {
 }
 
 .container--feature {
-  padding: 50px 16px;
+  padding: 50px 16px 1px 16px;
 }
 
 @media (min-width: 40em) {
   .container--feature {
-    padding: 70px 70px;
+    padding: 70px 70px 10px 70px;
   }
 }
 
@@ -371,9 +371,15 @@ a:hover {
   cursor: pointer;
   color: #ffffff;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 12px;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
+}
+
+@media (min-width: 40em) {
+  .button-indicators {
+    font-size: 14px;
+  }
 }
 
 .button-indicators:hover {
@@ -762,6 +768,10 @@ a:hover {
   background-color: #f4f4f4;
 }
 
+.description__title1 {
+  padding: 20px 0;
+}
+
 .description__card {
   background-color: #ffffff;
   border-radius: 0.6875rem;
@@ -784,6 +794,16 @@ a:hover {
 .description__video video {
   width: 100%;
   border-radius: 0.6875rem 0.6875rem 0 0;
+}
+
+.description__cont {
+  margin-top: 40px;
+}
+
+@media (min-width: 40em) {
+  .description__cont {
+    margin-top: 70px;
+  }
 }
 
 @media (min-width: 64em) {
@@ -1057,7 +1077,7 @@ a:hover {
 }
 
 .indicators__text {
-  margin: 20px 25px 50px 25px;
+  margin: 20px 15px 50px 15px;
 }
 
 .indicators__text p {
@@ -1073,11 +1093,12 @@ a:hover {
 }
 
 .indicators__title2 {
-  margin: 0px 25px 20px 25px;
+  margin: 0px 15px 20px 15px;
 }
 
 .indicators__image {
   text-align: center;
+  margin: 0 10px;
 }
 
 .indicators__image img {

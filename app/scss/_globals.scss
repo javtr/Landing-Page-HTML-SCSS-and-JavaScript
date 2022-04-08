@@ -191,11 +191,14 @@ a:hover {
   }
 
   &--feature {
-    padding: 50px 16px;
+    padding: 50px 16px 1px 16px;
 
 
     @include breakpoint-up(medium) {
-      padding: 70px 70px;
+      padding: 70px 70px 10px 70px;
+
+
+
     }
 
 
@@ -321,8 +324,15 @@ a:hover {
   cursor: pointer;
   color: $white;
   font-weight: 400;
-  font-size: $font-sm;
+  font-size: 12px;
   transition: opacity 300ms ease-in-out;
+
+  @include breakpoint-up(medium) {
+    font-size: 14px;
+  } 
+
+
+
 
   &:hover {
     opacity: 0.75;

@@ -1,6 +1,11 @@
 .description {
   background-color: $lightGray;
 
+  &__title1{
+    padding:20px 0;
+  }
+
+
   &__card {
     background-color: $white;
     border-radius: 0.6875rem;
@@ -24,7 +29,11 @@
   }
 
   &__cont{
+    margin-top: 40px;
 
+    @include breakpoint-up(medium) {
+      margin-top: 70px;
+    } 
 
 
     @include breakpoint-up(large) {
@@ -35,10 +44,14 @@
 
     &-content{
 
-
       
+
+
+
+
       @include breakpoint-up(large) {
         flex: 1 1 40%;
+
       } 
 
     }
