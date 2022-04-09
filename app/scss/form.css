@@ -1,0 +1,35 @@
+.sucess {
+	text-align: center;
+	margin: 30px 0;
+	width: 100%;
+}
+
+.sucess .sucess-element {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	background: rgb(0, 200, 80);
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px rgb(0, 200, 80, .4);
+	width: 100%;
+	max-width: 850px;
+}
+
+.error {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.error .error-element {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	background: rgb(255, 45, 66);
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px rgb(255, 45, 66, .4);
+	width: 100%;
+	max-width: 850px;
+}
+
+
+

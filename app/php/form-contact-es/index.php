@@ -26,6 +26,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../scss/style.css" />
+    <link rel="stylesheet" href="../../scss/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -83,34 +84,83 @@ if (!empty($_SESSION['_contact_form_success'])) {
 
     <!-- ====================== form =========================== -->
 
+
+
+
+
+
     <section class="contact">
       <div class="container container--contact">
+
+      
+
+
+      <?php
+            if (!empty($success)) 
+            // if (true) 
+            {
+                    ?>
+                <div class="sucess">
+                    <a class="sucess-element">Tu mensaje ha sido entregado! <br> pronto enviaremos a tu correo tu software Logic</a>
+                </div>
+                <?php
+            }
+        ?>
+
+        <?php
+            if (!empty($error))
+            // if (true) 
+             {
+                    ?>
+                <div class="error">
+                    <div class="error-element"><?= $error ?></div>
+                    <a class="error-element">Tu mensaje no ha podido ser entragado <br> Si el error persiste contacta a contact@logic.com </a>
+                </div>                        
+                <?php
+            }
+        ?>
 
 
 
         <div class="contact__card">
 
-
             <div class="contact__title">Contact us</div>
 
-            <!-- <div class="contact__group-form"> -->
-                <div class="contact__label-form">Name</div>
-                <input type="text" name="name" id="name" class="contact__input-form" placeholder="John Doe">
-            <!-- </div> -->
 
-            <!-- <div class="contact__group-form"> -->
-                <div class="contact__label-form">Email</div>
-                <input type="text" name="name" id="name" class="contact__input-form" placeholder="contact@mail.com">
-            <!-- </div> -->
 
-            <!-- <div class="contact__group-form"> -->
-                <div class="contact__label-form">Message</div>
-                <textarea type="text" name="name" id="name" class="contact__input-form-text" placeholder=""></textarea>
-            <!-- </div> -->
 
-            
-            <a href="#" class="button-contact">Send</a>
 
+            <form method="post" action="submit.php" class="contact-form">
+
+
+              <!-- <div class="contact__group-form"> -->
+                  <div class="contact__label-form">Name</div>
+                  <input type="text" name="name" id="name" class="contact__input-form" placeholder="John Doe">
+              <!-- </div> -->
+
+
+              <!-- <div class="contact__group-form"> -->
+                  <div class="contact__label-form">Email</div>
+                  <input type="email" name="email" id="email" class="contact__input-form" placeholder="contact@mail.com">
+              <!-- </div> -->
+
+
+              <!-- <div class="contact__group-form"> -->
+                  <div class="contact__label-form">Message</div>
+                  <textarea type="text" name="message" id="message" class="contact__input-form-text" placeholder=""></textarea>
+              <!-- </div> -->
+
+
+              <button class="btn btn-primary btn-block btn button-contact">Send Message</button>
+
+            </form>
+
+
+
+
+
+
+            <!-- <a href="#" class="button-contact">Send</a> -->
 
         </div>
       </div>
