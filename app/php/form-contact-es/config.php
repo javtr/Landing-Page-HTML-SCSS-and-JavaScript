@@ -19,8 +19,7 @@ define('CONTACTFORM_TO_NAME', 'Your Name');
 // The details of your SMTP service, e.g. Gmail.
 define('CONTACTFORM_SMTP_HOSTNAME', 'smtp.gmail.com');
 define('CONTACTFORM_SMTP_USERNAME', 'indicatorslogic@gmail.com');
-// define('CONTACTFORM_SMTP_PASSWORD', 'mhmnxzhyaewxvept');
-define('CONTACTFORM_SMTP_PASSWORD', 'assttzblgodrlwhz');
+define('CONTACTFORM_SMTP_PASSWORD', 'rcyvexsnorngazgw');
 
 
 // The reCAPTCHA credentials for your site. You can get these at https://www.google.com/recaptcha/admin

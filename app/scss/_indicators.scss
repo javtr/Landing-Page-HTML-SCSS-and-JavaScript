@@ -135,7 +135,15 @@
 
       @include breakpoint-up("medium") {
         width: 90%;
-      }      
+        margin: 15px 0;
+      }   
+      
+      @include breakpoint-up("large") {
+        width: 80%;
+        margin: 20px 0;
+      }   
+
+
     }
   }
 
