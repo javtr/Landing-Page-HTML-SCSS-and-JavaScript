@@ -495,6 +495,22 @@ a:hover {
   padding-bottom: 25px;
 }
 
+.header__image img {
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .header__image img {
+    width: 125%;
+  }
+}
+
+@media (min-width: 64em) {
+  .header__image img {
+    width: 150%;
+  }
+}
+
 .header__lang {
   position: absolute;
   right: 75px;
@@ -529,8 +545,8 @@ a:hover {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 50%;
-  top: .3125rem;
-  left: .3125rem;
+  top: 0.3125rem;
+  left: 0.3125rem;
 }
 
 .header__lang-desktop-es span::before {
@@ -541,8 +557,8 @@ a:hover {
   font-size: 1.125rem;
   width: 1.875rem;
   height: 1.875rem;
-  top: .625rem;
-  right: .3125rem;
+  top: 0.625rem;
+  right: 0.3125rem;
 }
 
 .header__lang-desktop-en {
@@ -562,8 +578,8 @@ a:hover {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 50%;
-  top: .3125rem;
-  right: .3125rem;
+  top: 0.3125rem;
+  right: 0.3125rem;
 }
 
 .header__lang-desktop-en span::before {
@@ -574,8 +590,8 @@ a:hover {
   font-size: 1.125rem;
   width: 1.875rem;
   height: 1.875rem;
-  top: .625rem;
-  left: .625rem;
+  top: 0.625rem;
+  left: 0.625rem;
 }
 
 .header__toggle span {
@@ -1974,7 +1990,7 @@ a:hover {
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     gap: 1rem;
     justify-items: start;
   }
