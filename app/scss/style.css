@@ -590,7 +590,7 @@ a:hover {
 }
 
 .header__toggle span:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 
 .header__links a {
