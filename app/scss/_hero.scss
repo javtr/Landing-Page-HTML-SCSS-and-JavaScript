@@ -11,12 +11,13 @@
 
   &__image {
     position: relative;
-    background-image: url('../../images/bg-mobil.svg');
+    // background-image: url('../../images/fondo_05.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position-x: right;
+    // background-position: center center;
     min-height: 28.125rem;
-    margin-right: -6.25rem;
+    // margin-right: -6.25rem;
 
     @include breakpoint-up(medium){
       min-height: 25rem;
@@ -33,17 +34,17 @@
 
     &::before { 
 
-      @include breakpoint-up(large){
+      // @include breakpoint-up(large){
         content: "";
         position: absolute;
         height: 100%;
-        background-image: url('../../images/bg-intro-desktop.svg');        
+        background-image: url('../../images/fondo_05.svg');
         background-repeat: no-repeat;
         background-position: center bottom;
         width: 150%;
         background-size: 122%;
         background-position: 0% 83%;
-      }
+      // }
 
 
     }

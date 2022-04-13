@@ -34,6 +34,20 @@
     @include breakpoint-up(large) {
       grid-area: logo;
     }
+
+    img {
+      width: 100%;
+
+      @include breakpoint-up(medium) {
+        width: 125%;
+      }
+
+      @include breakpoint-up(large) {
+        width: 150%;
+      }
+    }
+
+
   }
 
   &__social {
