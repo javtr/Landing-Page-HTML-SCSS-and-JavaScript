@@ -45,8 +45,26 @@
     right: 75px;
     width: 30px;
     height: 30px;
-    background-color: $blue;
     border-radius: 50%;
+
+
+    &--es{
+      background-image: url("../../images/brit_flag.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+    }
+
+    &--en{
+      background-image: url("../../images/sp_flag.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+    }
+
+
 
     div {
     }
@@ -72,24 +90,38 @@
       content: "";
       display: block;
       position: absolute;
-      background-color: $blue;
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
-      top: 0.3125rem;
-      left: 0.3125rem;
+      margin: 5px;
+      background-image: url("../../images/brit_flag.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+
+
+
     }
 
     span::before {
-      content: "Es";
+      content: "En";
       display: block;
       position: absolute;
       color: $white;
       font-size: $font-med;
-      width: 1.875rem;
-      height: 1.875rem;
-      top: 0.625rem;
-      right: 0.3125rem;
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      right: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+
+
     }
   }
 
@@ -105,24 +137,33 @@
       content: "";
       display: block;
       position: absolute;
-      background-color: $blue;
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
-      top: 0.3125rem;
-      right: 0.3125rem;
+      margin: 5px;
+      right: 0px;
+      background-image: url("../../images/sp_flag.svg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      
     }
 
     span::before {
-      content: "En";
+      content: "Es";
       display: block;
       position: absolute;
       color: $white;
       font-size: $font-med;
-      width: 1.875rem;
-      height: 1.875rem;
-      top: 0.625rem;
-      left: 0.625rem;
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      left: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
