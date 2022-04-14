@@ -44,7 +44,7 @@ if (!empty($_SESSION['_form_form_success'])) {
       <div class="container container--contact">
 
       <div class="form__logo">
-            <img src="../../../images/logo.svg" alt="">
+            <img src="../../../images/logo_logic04.svg" alt="">
         </div>
 
         <div class="form__card">

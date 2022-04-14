@@ -43,8 +43,8 @@ if (!empty($_SESSION['_contact_form_success'])) {
       <div class="overlay has-fade"></div>
 
       <nav class="container--navbar flex flex-jc-sb flex-ai-c">
-        <a class="header__image" href="#">
-          <img src="../../../images/logo.svg" alt="" />
+      <a class="header__image" href="#">
+          <img src="../../../images/logo_logic04.svg" alt="" />
         </a>
         <div class="header__links hide-for-mobile">
           <a href="../../../index.html">Logic</a>
