@@ -33,17 +33,18 @@
       width: 100%;
       background-image: url("../../images/fondo_05.svg");
       background-repeat: no-repeat;
-      background-size: 190%;
-      background-position: 50% 0;
+      background-size: 250%;
+      background-position: 25% 0;
+      background-attachment: fixed;
 
       @include breakpoint-up(medium){
-        background-position: 30% 0;
-        background-size: 120%;
+        background-position: 20% 0;
+        background-size: 150%;
       }
 
       @include breakpoint-up(large){
-        background-position: 65% 0;
-        width: 145%;
+        background-position: -40% 0;
+        width: 150%;
       }
 
 
