@@ -1498,6 +1498,10 @@ a:hover {
   }
 }
 
+.contact__label-form span {
+  color: #ff2d42;
+}
+
 .contact__input-form {
   width: 100%;
   border-radius: 0.3125rem;

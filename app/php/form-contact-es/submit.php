@@ -65,9 +65,6 @@ $mail = new \PHPMailer\PHPMailer\PHPMailer(true);
 
 try {
 
-
-
-
     //Server settings
     $mail->SMTPDebug = CONTACTFORM_PHPMAILER_DEBUG_LEVEL;
     $mail->isSMTP();

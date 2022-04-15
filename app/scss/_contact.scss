@@ -42,6 +42,13 @@
     @include breakpoint-up("large") {
         font-size: 1.25rem;
     }    
+
+
+    & span{
+      color: rgb(255, 45, 66);
+    }
+
+
   }
 
   &__input-form {

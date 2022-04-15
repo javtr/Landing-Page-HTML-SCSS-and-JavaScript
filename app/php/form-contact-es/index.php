@@ -37,7 +37,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
 
 
 <body>
-
     <!-- ====================== navbar =========================== -->
     <header class="header">
       <div class="overlay has-fade"></div>
@@ -53,11 +52,8 @@ if (!empty($_SESSION['_contact_form_success'])) {
           <a href="">Contacto</a>
         </div>
 
-        <a href="#" class="header__lang hide-for-desktop">
-          <div>
-            <p>Es</p>
-          </div>
-        </a>
+        <a href="../form-contact/index.php" class="header__lang header__lang--es hide-for-desktop"></a>
+        
 
         <a
           id="btnLang-cont"
@@ -84,20 +80,11 @@ if (!empty($_SESSION['_contact_form_success'])) {
 
     <!-- ====================== form =========================== -->
 
-
-
-
-
-
     <section class="contact">
       <div class="container container--contact">
 
-      
-
-
       <?php
             if (!empty($success)) 
-            // if (true) 
             {
                     ?>
                 <div class="sucess">
@@ -109,7 +96,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
 
         <?php
             if (!empty($error))
-            // if (true) 
              {
                     ?>
                 <div class="error">
@@ -120,48 +106,21 @@ if (!empty($_SESSION['_contact_form_success'])) {
             }
         ?>
 
-
-
         <div class="contact__card">
-
             <div class="contact__title">Contact us</div>
-
-
-
-
-
             <form method="post" action="submit.php" class="contact-form">
 
-
-              <!-- <div class="contact__group-form"> -->
-                  <div class="contact__label-form">Name</div>
+                  <div class="contact__label-form">Name<span>*</span></div>
                   <input type="text" name="name" id="name" class="contact__input-form" placeholder="John Doe">
-              <!-- </div> -->
 
-
-              <!-- <div class="contact__group-form"> -->
-                  <div class="contact__label-form">Email</div>
+                  <div class="contact__label-form">Email<span>*</span></div>
                   <input type="email" name="email" id="email" class="contact__input-form" placeholder="contact@mail.com">
-              <!-- </div> -->
 
-
-              <!-- <div class="contact__group-form"> -->
-                  <div class="contact__label-form">Message</div>
+                  <div class="contact__label-form">Message<span>*</span></div>
                   <textarea type="text" name="message" id="message" class="contact__input-form-text" placeholder=""></textarea>
-              <!-- </div> -->
-
 
               <button class="btn btn-primary btn-block btn button-contact">Send Message</button>
-
             </form>
-
-
-
-
-
-
-            <!-- <a href="#" class="button-contact">Send</a> -->
-
         </div>
       </div>
     </section>
