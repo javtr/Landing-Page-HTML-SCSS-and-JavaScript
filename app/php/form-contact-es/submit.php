@@ -89,7 +89,7 @@ try {
 
 Name: {$_POST['name']}
 Email: {$_POST['email']}
-Subject: {$_POST['subject']}
+
 
 -------------------------------
 {$_POST['message']}
