@@ -462,6 +462,18 @@ a:hover {
 }
 
 @media (min-width: 64em) {
+  .hide-for-sm-md {
+    display: none;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-large {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
   }
@@ -810,6 +822,12 @@ a:hover {
 }
 
 @media (min-width: 64em) {
+  .hero__text-head {
+    text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
   .hero__text {
     -webkit-box-flex: 2;
         -ms-flex: 2;
@@ -817,6 +835,12 @@ a:hover {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__text--title {
     text-align: left;
   }
 }
@@ -909,6 +933,13 @@ a:hover {
 
 .description__button {
   text-align: center;
+  margin-top: 40px;
+}
+
+@media (min-width: 64em) {
+  .description__button {
+    margin-top: 0;
+  }
 }
 
 .description__button a {
@@ -2035,7 +2066,7 @@ a:hover {
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     gap: 1rem;
     justify-items: start;
   }
