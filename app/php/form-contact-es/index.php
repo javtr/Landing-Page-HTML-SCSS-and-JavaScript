@@ -102,6 +102,9 @@ if (!empty($_SESSION['_contact_form_success'])) {
             }
         ?>
 
+
+
+
         <div class="contact__card">
             <div class="contact__title">Contact us</div>
             <form method="post" action="submit.php" class="contact-form">

@@ -9,6 +9,9 @@ const btnLangBuy = document.querySelector("#btnLang-buy");
 const btnLangCont = document.querySelector("#btnLang-cont");
 
 
+if (btnMenu) {
+  
+
 btnMenu.addEventListener("click", function () {
   if (header.classList.contains("open")) {
     header.classList.remove("open");
@@ -30,6 +33,8 @@ btnMenu.addEventListener("click", function () {
     });
   }
 });
+
+}
 
 
 // if (btnLangLogic) {

@@ -12,8 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 
 
-
-
 // Do some validation, check to make sure the name, email and message are valid.
 // if (empty($_POST['g-recaptcha-response'])) {
 //     redirectWithError("Por favor completa el CAPTCHA.");
@@ -86,7 +84,7 @@ try {
 
 Name: {$_POST['name']}
 Email: {$_POST['email']}
-
+Idmachine: {$_POST['idmachine']}
 
 -------------------------------
 {$_POST['message']}
