@@ -136,12 +136,12 @@ a:hover {
   &--advantage {
     padding: 50px;
 
-    @include breakpoint-up(large) {
-      padding: 20px;
+    @include breakpoint-up(medium) {
+      padding: 50px 20px;
     }
 
     @include breakpoint-up(large) {
-      padding: 50px 140px;
+      padding: 50px 80px;
     }
   }
 

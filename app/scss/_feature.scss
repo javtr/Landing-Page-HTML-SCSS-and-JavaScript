@@ -3,8 +3,10 @@
 
   &__h2 {
 
+    margin-bottom: 10px;
+
     @include breakpoint-up(medium) {
-      margin-bottom: 60px;
+      margin-bottom: 10px;
     }
   }
 

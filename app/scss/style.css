@@ -229,15 +229,15 @@ a:hover {
   padding: 50px;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .container--advantage {
-    padding: 20px;
+    padding: 50px 20px;
   }
 }
 
 @media (min-width: 64em) {
   .container--advantage {
-    padding: 50px 140px;
+    padding: 50px 80px;
   }
 }
 
@@ -968,7 +968,7 @@ a:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    padding: 1.25rem;
+    padding: 10px;
   }
 }
 
@@ -977,7 +977,7 @@ a:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 2.1875rem;
+    padding: 25px;
   }
 }
 
@@ -1566,9 +1566,13 @@ a:hover {
   background-color: #f4f4f4;
 }
 
+.feature__h2 {
+  margin-bottom: 10px;
+}
+
 @media (min-width: 40em) {
   .feature__h2 {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
 }
 
@@ -2205,6 +2209,7 @@ a:hover {
 
 @media (max-width: 63.9375em) {
   .footer__cta a.button {
+    margin-top: 1.875rem;
     margin-bottom: 1.875rem;
   }
 }
