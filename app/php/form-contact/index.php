@@ -43,26 +43,19 @@ if (!empty($_SESSION['_contact_form_success'])) {
 
       <nav class="container--navbar flex flex-jc-sb flex-ai-c">
         <a class="header__image" href="#">
-          <img src="../../../images/logo.svg" alt="" />
+          <img src="../../../images/logo_logic04.svg" alt="" />
         </a>
         <div class="header__links hide-for-mobile">
-          <a href="../../index.html">Logic</a>
-          <a href="#">Indicators</a>
-          <a href="#">Buy</a>
+          <a href="../../en/index.html">Logic</a>
+          <a href="../../en/indicators.html">Indicators</a>
+          <a href="../../en/buy.html">Buy</a>
           <a href="#">Contact</a>
         </div>
 
-        <a href="#" class="header__lang hide-for-desktop">
-          <div>
-            <p>Es</p>
-          </div>
-        </a>
+        <a href="../form-contact-es/index.php" class="header__lang header__lang--en hide-for-desktop"></a>
+        
 
-        <a
-          id="btnLang"
-          href="#"
-          class="header__lang-desktop-es hide-for-mobile"
-        >
+        <a id="btnLang-buy" href="../form-contact-es/index.php" class="header__lang-desktop-en hide-for-mobile">
           <span></span>
         </a>
 
@@ -74,11 +67,11 @@ if (!empty($_SESSION['_contact_form_success'])) {
       </nav>
 
       <div class="header__menu has-fade">
-        <a href="../../index.html">Logic</a>
-        <a href="#">Indicators</a>
-        <a href="#">Buy</a>
+        <a href="../../en/index.html">Logic</a>
+        <a href="../../en/indicators.html">Indicators</a>
+        <a href="../../en/buy.html">Buy</a>
         <a href="#">Contact</a>
-      </div>
+     </div>
     </header>
 
     <!-- ====================== form =========================== -->
