@@ -11,34 +11,32 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     redirectWithError("");
 }
 
-// Do some validation, check to make sure the name, email and message are valid.
-if (empty($_POST['g-recaptcha-response'])) {
-    redirectWithError("Please complete the CAPTCHA.");
-}
-
-$recaptcha = new \ReCaptcha\ReCaptcha(CONTACTFORM_RECAPTCHA_SECRET_KEY);
-$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_REQUEST['REMOTE_ADDR']);
-
-if (!$resp->isSuccess()) {
-    $errors = $resp->getErrorCodes();
-    $error = $errors[0];
-
-    $recaptchaErrorMapping = [
-        'missing-input-secret' => 'No reCAPTCHA secret key was submitted.',
-        'invalid-input-secret' => 'The submitted reCAPTCHA secret key was invalid.',
-        'missing-input-response' => 'No reCAPTCHA response was submitted.',
-        'invalid-input-response' => 'The submitted reCAPTCHA response was invalid.',
-        'bad-request' => 'An unknown error occurred while trying to validate your response.',
-        'timeout-or-duplicate' => 'The request is no longer valid. Please try again.',
-    ];
-
-    $errorMessage = $recaptchaErrorMapping[$error];
-    redirectWithError("Please complete the CAPTCHA: ".$errorMessage);
-}
 
 
+// // Do some validation, check to make sure the name, email and message are valid.
+// if (empty($_POST['g-recaptcha-response'])) {
+//     redirectWithError("Por favor completa el CAPTCHA.");
+// }
 
+// $recaptcha = new \ReCaptcha\ReCaptcha(CONTACTFORM_RECAPTCHA_SECRET_KEY);
+// $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_REQUEST['REMOTE_ADDR']);
 
+// if (!$resp->isSuccess()) {
+//     $errors = $resp->getErrorCodes();
+//     $error = $errors[0];
+
+//     $recaptchaErrorMapping = [
+//         'missing-input-secret' => 'No reCAPTCHA secret key was submitted.',
+//         'invalid-input-secret' => 'The submitted reCAPTCHA secret key was invalid.',
+//         'missing-input-response' => 'No reCAPTCHA response was submitted.',
+//         'invalid-input-response' => 'The submitted reCAPTCHA response was invalid.',
+//         'bad-request' => 'An unknown error occurred while trying to validate your response.',
+//         'timeout-or-duplicate' => 'The request is no longer valid. Please try again.',
+//     ];
+
+//     $errorMessage = $recaptchaErrorMapping[$error];
+//     redirectWithError("Por favor completa el CAPTCHA: ".$errorMessage);
+// }
 
 
 if (empty($_POST['name'])) {
@@ -49,21 +47,18 @@ if (empty($_POST['email'])) {
     redirectWithError("Por favor ingresa tu email.");
 }
 
-if (empty($_POST['subject'])) {
-    redirectWithError("Por favor ingresa el Machine ID.");
+if (empty($_POST['idmachine'])) {
+    redirectWithError("Por favor ingresa tu idmachine.");
 }
 
-// if (empty($_POST['message'])) {
-//     redirectWithError("Please enter your message in the form.");
-// }
 
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     redirectWithError("Por favor ingresa un email valido.");
 }
 
-// if (strlen($_POST['message']) < 10) {
-//     redirectWithError("Please enter at least 10 characters in the message field.");
-// }
+if (strlen($_POST['message']) > 2000) {
+    redirectWithError("Por favor ingresa menos de 2000 caracteres en el espacio de mensaje.");
+}
 
 // Everything seems OK, time to send the email.
 
@@ -86,15 +81,19 @@ try {
     $mail->addReplyTo($_POST['email'], $_POST['name']);
 
     // Content
-    $mail->Subject = "[Contact Form OTM - licencia] ";
+    $mail->Subject = "[ Licencia Logic ] ";
     $mail->Body    = <<<EOT
-Name: {$_POST['name']}
-Email: {$_POST['email']}
-ID: {$_POST['subject']}
--------------------------------
-{$_POST['message']}
+
+[Nombre]: {$_POST['name']}
+[Email]: {$_POST['email']}
+[Idmachine]: {$_POST['idmachine']}
+...
+[Mensaje]: {$_POST['message']}
 
 EOT;
+
+
+
 
     $mail->send();
     redirectSuccess();

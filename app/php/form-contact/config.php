@@ -8,20 +8,18 @@
 
 // The name and address which should be used for the sender details.
 // The name can be anything you want, the address should be something in your own domain. It does not need to exist as a mailbox.
-define('CONTACTFORM_FROM_ADDRESS', 'objectivetradingmethod@gmail.com');
-define('CONTACTFORM_FROM_NAME', 'Contact Form on example.com');
+define('CONTACTFORM_FROM_ADDRESS', 'indicatorslogic@gmail.com');
+define('CONTACTFORM_FROM_NAME', 'Usuario Logic');
 
 // The name and address to which the contact message should be sent.
 // These details should NOT be the same as the sender details.
-define('CONTACTFORM_TO_ADDRESS', 'objectivetradingmethod@gmail.com');
+define('CONTACTFORM_TO_ADDRESS', 'indicatorslogic@gmail.com');
 define('CONTACTFORM_TO_NAME', 'Your Name');
 
 // The details of your SMTP service, e.g. Gmail.
 define('CONTACTFORM_SMTP_HOSTNAME', 'smtp.gmail.com');
-define('CONTACTFORM_SMTP_USERNAME', 'objectivetradingmethod@gmail.com');
-// define('CONTACTFORM_SMTP_PASSWORD', 'mhmnxzhyaewxvept');
-define('CONTACTFORM_SMTP_PASSWORD', 'chncnflkfjwljhid');
-
+define('CONTACTFORM_SMTP_USERNAME', 'indicatorslogic@gmail.com');
+define('CONTACTFORM_SMTP_PASSWORD', 'rcyvexsnorngazgw');
 
 
 // The reCAPTCHA credentials for your site. You can get these at https://www.google.com/recaptcha/admin

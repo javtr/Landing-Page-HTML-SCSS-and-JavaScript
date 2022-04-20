@@ -26,6 +26,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../scss/style.css" />
+    <link rel="stylesheet" href="../../scss/form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,7 +43,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
       <div class="overlay has-fade"></div>
 
       <nav class="container--navbar flex flex-jc-sb flex-ai-c">
-        <a class="header__image" href="#">
+        <a class="header__image" href="../../en/index.html">
           <img src="../../../images/logo_logic04.svg" alt="" />
         </a>
         <div class="header__links hide-for-mobile">
@@ -79,41 +80,56 @@ if (!empty($_SESSION['_contact_form_success'])) {
     <section class="contact">
       <div class="container container--contact">
 
+      <?php
+            if (!empty($success)) 
+            {
+                    ?>
+                <div class="sucess">
+                    <a class="sucess-element">your message has been sent! <br> We will contact you soon.</a>
+                </div>
+                <?php
+            }
+        ?>
+
+        <?php
+            if (!empty($error))
+             {
+                    ?>
+                <div class="error">
+                    <div class="error-element"><?= $error ?></div>
+                    <a class="error-element">Your message could not be sent <br> If the error persists, please contact contact@logic.com. </a>
+                </div>                        
+                <?php
+            }
+        ?>
+
+
 
 
         <div class="contact__card">
-
-
             <div class="contact__title">Contact us</div>
+            <form method="post" action="submit.php" class="contact-form">
 
-            <!-- <div class="contact__group-form"> -->
-                <div class="contact__label-form">Name</div>
-                <input type="text" name="name" id="name" class="contact__input-form" placeholder="John Doe">
-            <!-- </div> -->
+                  <div class="contact__label-form">Name<span>*</span></div>
+                  <input type="text" name="name" id="name" class="contact__input-form" placeholder="John Doe">
 
-            <!-- <div class="contact__group-form"> -->
-                <div class="contact__label-form">Email</div>
-                <input type="text" name="name" id="name" class="contact__input-form" placeholder="contact@mail.com">
-            <!-- </div> -->
+                  <div class="contact__label-form">Email<span>*</span></div>
+                  <input type="email" name="email" id="email" class="contact__input-form" placeholder="contact@mail.com">
 
-            <!-- <div class="contact__group-form"> -->
-                <div class="contact__label-form">Message</div>
-                <textarea type="text" name="name" id="name" class="contact__input-form-text" placeholder=""></textarea>
-            <!-- </div> -->
+                  <div class="contact__label-form">Message<span>*</span></div>
+                  <textarea type="text" name="message" id="message" class="contact__input-form-text" placeholder=""></textarea>
 
-            
-            <a href="#" class="button-contact">Send</a>
-
-
+              <button class="btn btn-primary btn-block btn button-contact">Send Message</button>
+            </form>
         </div>
       </div>
     </section>
 
-    <!-- ====================== footer1 =========================== -->
+
     <footer class="footer">
       <div class="container">
         <a class="footer__logo" href="#">
-          <img src="../../../images/logo-dark.svg" />
+          <img src="../../../images/logo_logic05.svg" />
         </a>
 
         <div class="footer__social">
@@ -164,33 +180,24 @@ if (!empty($_SESSION['_contact_form_success'])) {
           </a>
         </div>
 
-        <div class="footer__links col1">
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-        </div>
 
-        <div class="footer__links col2">
-          <a href="#">Careers</a>
-          <a href="#">Support</a>
-          <a href="#">Privacy Policy</a>
+        <div class="footer__links col1">
+          <a href="../../en/index.html">Logic</a>
+          <a href="../../en/indicators.html">Indicators</a>
+          <a href="../../en/buy.html">Buy</a>
         </div>
 
         <div class="footer__cta">
-          <a href="#" class="button">Request Invite</a>
+          <a href="#" class="button ">Contact</a>
         </div>
 
         <div class="footer__copyright">
-          &copy; EasyBank. All Rights Reserved.
+          &copy; Logic Indicators. All Rights Reserved. 2022
         </div>
       </div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Coder Coder</a>.
-      </div>
     </footer>
+
+
 
     <script src="../../js/script.js"></script>
 </body>

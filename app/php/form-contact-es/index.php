@@ -42,7 +42,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
       <div class="overlay has-fade"></div>
 
       <nav class="container--navbar flex flex-jc-sb flex-ai-c">
-        <a class="header__image" href="#">
+        <a class="header__image" href="../../../index.html">
           <img src="../../../images/logo_logic04.svg" alt="" />
         </a>
         <div class="header__links hide-for-mobile">
@@ -96,7 +96,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
                     ?>
                 <div class="error">
                     <div class="error-element"><?= $error ?></div>
-                    <a class="error-element">Tu mensaje no ha podido ser entragado <br> Si el error persiste contacta a contact@logic.com </a>
+                    <a class="error-element">Tu mensaje no ha podido ser entregado <br> Si el error persiste contacta a contact@logic.com </a>
                 </div>                        
                 <?php
             }
@@ -178,10 +178,11 @@ if (!empty($_SESSION['_contact_form_success'])) {
         </a>
       </div>
 
+
       <div class="footer__links col1">
-        <a href="#">Logic</a>
-        <a href="#">Indicadores</a>
-        <a href="#">Comprar</a>
+        <a href="../../../index.html">Logic</a>
+        <a href="../../es/indicators.html">Indicadores</a>
+        <a href="../../es/buy.html">Comprar</a>
       </div>
 
 
