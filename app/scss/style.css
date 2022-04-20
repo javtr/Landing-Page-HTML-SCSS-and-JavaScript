@@ -288,7 +288,7 @@ a:hover {
 }
 
 .container--contact {
-  padding: 50px 16px;
+  padding: 30px 16px;
 }
 
 @media (min-width: 64em) {
@@ -1846,25 +1846,25 @@ a:hover {
 }
 
 .form__logo {
-  margin-bottom: 40px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 30px 30px 30px;
-}
-
-.form__logo img {
-  width: 80%;
-}
-
-@media (min-width: 40em) {
-  .form__logo img {
-    width: 50%;
-  }
+  width: 200px;
+  padding: 0 30px 15px 0;
 }
 
 @media (min-width: 40em) {
   .form__logo {
     width: 750px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+  }
+}
+
+.form__logo img {
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .form__logo img {
+    width: 25%;
   }
 }
 

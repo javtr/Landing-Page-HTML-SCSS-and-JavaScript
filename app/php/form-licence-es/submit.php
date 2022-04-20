@@ -52,14 +52,13 @@ if (empty($_POST['idmachine'])) {
 }
 
 
-
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     redirectWithError("Por favor ingresa un email valido.");
 }
 
-// if (strlen($_POST['message']) < 10) {
-//     redirectWithError("Please enter at least 10 characters in the message field.");
-// }
+if (strlen($_POST['message']) > 2000) {
+    redirectWithError("Por favor ingresa menos de 2000 caracteres en el espacio de mensaje.");
+}
 
 // Everything seems OK, time to send the email.
 
@@ -82,13 +81,14 @@ try {
     $mail->addReplyTo($_POST['email'], $_POST['name']);
 
     // Content
-    $mail->Subject = "[Contact Form OTM - licencia] ";
+    $mail->Subject = "[ Licencia Logic ] ";
     $mail->Body    = <<<EOT
-Name: {$_POST['name']}
-Email: {$_POST['email']}
-ID: {$_POST['subject']}
--------------------------------
-{$_POST['message']}
+
+[Nombre]: {$_POST['name']}
+[Email]: {$_POST['email']}
+[Idmachine]: {$_POST['idmachine']}
+...
+[Mensaje]: {$_POST['message']}
 
 EOT;
 

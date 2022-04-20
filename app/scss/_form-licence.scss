@@ -2,30 +2,29 @@
   color: $white;
 
   &__logo {
-    margin-bottom: 40px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 30px 30px 30px;
 
-    img {
-      width: 80%;
-
-      @include breakpoint-up("medium") {
-
-        width: 50%;
-    
-      }
-
-    }
+    width: 200px;
+    padding: 0 30px 15px 0;
 
     @include breakpoint-up("medium") {
-
       width: 750px;
-  
+      margin-bottom: 40px;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+
+      @include breakpoint-up("medium") {
+        width: 25%;
+      }
     }
 
 
   }
+
+
+
 
   &__card {
     border-radius: 0.6875rem;
@@ -36,9 +35,7 @@
     position: relative;
 
     @include breakpoint-up("medium") {
-
       padding: 70px 60px 40px 60px;
-
     }
   }
 
@@ -61,12 +58,9 @@
       text-align: left;
 
       @include breakpoint-up("medium") {
-
         font-size: 16px;
         padding: 14px;
-
       }
-
     }
   }
 
@@ -94,18 +88,10 @@
     text-align: center;
 
     @include breakpoint-up("medium") {
-
       font-size: 18px;
       margin-bottom: 60px;
-
     }
-
-
   }
-
-
-
-
 
   &__numeral {
     font-weight: 300;
@@ -117,11 +103,8 @@
     text-align: left;
 
     @include breakpoint-up("medium") {
-
       font-size: 20px;
-
     }
-
   }
 
   &__numeral2 {
@@ -134,48 +117,32 @@
     text-align: left;
 
     @include breakpoint-up("medium") {
-
       font-size: 20px;
-      margin-bottom:40px;
-      
+      margin-bottom: 40px;
     }
-
   }
 
-
-
-
-
-  &__image{
-    & img{
+  &__image {
+    & img {
       width: 100%;
       margin-bottom: 10px;
     }
 
-  &--text{
-    font-weight: 300;
-    line-height: 1.15;
-    color: $lightBlue;
+    &--text {
+      font-weight: 300;
+      line-height: 1.15;
+      color: $lightBlue;
 
-    font-size: 12px;
-    margin-bottom: 40px;
-    text-align: center;
+      font-size: 12px;
+      margin-bottom: 40px;
+      text-align: center;
 
-    @include breakpoint-up("medium") {
-
-      font-size: 16px;
-      margin-bottom: 60px;
+      @include breakpoint-up("medium") {
+        font-size: 16px;
+        margin-bottom: 60px;
+      }
     }
-
-
   }
-
-
-}
-
-
-
-
 
   &__label-form {
     font-weight: 300;
@@ -186,10 +153,9 @@
     margin-bottom: 0.625rem;
     text-align: left;
 
-    & span{
-      color : #e70045;
+    & span {
+      color: #e70045;
     }
-
 
     @include breakpoint-up("large") {
       font-size: 1.25rem;
@@ -225,8 +191,7 @@
     resize: vertical;
   }
 
-
-  &__note{
+  &__note {
     font-weight: 300;
     line-height: 1.15;
     color: $lightBlue;
@@ -239,8 +204,5 @@
     @include breakpoint-up("large") {
       font-size: 16px;
     }
-
-
   }
-
 }

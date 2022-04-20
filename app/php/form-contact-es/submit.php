@@ -79,15 +79,13 @@ try {
     $mail->addReplyTo($_POST['email'], $_POST['name']);
 
     // Content
-    $mail->Subject = "[formulario contacto Logic] ";
+    $mail->Subject = "[ Contacto Logic ] ";
     $mail->Body    = <<<EOT
 
-Name: {$_POST['name']}
-Email: {$_POST['email']}
-Idmachine: {$_POST['idmachine']}
-
--------------------------------
-{$_POST['message']}
+[Nombre]: {$_POST['name']}
+[Email]: {$_POST['email']}
+...
+[Mensaje]: {$_POST['message']}
 EOT;
 
     $mail->send();

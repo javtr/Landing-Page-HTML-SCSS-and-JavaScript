@@ -84,7 +84,7 @@ if (!empty($_SESSION['_contact_form_success'])) {
             {
                     ?>
                 <div class="sucess">
-                    <a class="sucess-element">Tu mensaje ha sido entregado! <br> pronto enviaremos a tu correo tu software Logic</a>
+                    <a class="sucess-element">Tu mensaje ha sido entregado! <br> Pronto nos contactaremos contigo</a>
                 </div>
                 <?php
             }
