@@ -41,9 +41,15 @@
 
 
     @include breakpoint-up("large") {
-      padding: 5.3125rem 3.125rem;
+      padding: 5.3125rem 2rem;
       margin-bottom: 4.375rem;
     }
+
+    @include breakpoint-up("xlarge") {
+      padding: 5.3125rem 3rem;
+    }
+
+
   }
 
   &__title {
@@ -82,6 +88,7 @@
     @include breakpoint-up("large") {
       height: 100%;
       flex: 1 1 60%;
+      padding-top: 25px;
     }
 
 
@@ -132,8 +139,13 @@
   &__info {
     @include breakpoint-up("large") {
       flex: 1 1 40%;
-      padding: 0px 30px;
+      padding-left: 30px;
     }
+
+    @include breakpoint-up("xlarge") {
+      padding-left:45px;
+    }
+
 
     &--subtitle {
       font-weight: 300;
@@ -178,9 +190,14 @@
     }
 
     &--list {
-      padding-left: 3.125rem;
+      padding-left: 2.125rem;
       list-style: square;
       margin-bottom: 3.75rem;
+
+      @include breakpoint-up("large") {
+        padding-left: 18px;
+      }
+
 
       li {
         font-weight: 300;
@@ -189,6 +206,15 @@
 
         font-size: $font-med;
         margin-bottom: 0.625rem;
+
+        @include breakpoint-up("large") {
+          font-size: 16px;
+        }
+  
+        @include breakpoint-up("xlarge") {
+          font-size: $font-med;
+        }
+
       }
     }
 

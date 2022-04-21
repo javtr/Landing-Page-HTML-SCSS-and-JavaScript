@@ -5,31 +5,45 @@ const imgButton3 = document.querySelector("#item3");
 const imgButton4 = document.querySelector("#item4");
 const paybutton = document.querySelector("#play");
 
-let speed = 2000;
+let speed = 10000;
 let cont = 0;
 let move = true;
 
 
 let imgUrl = [
-  {url: "../../images/chart-1080-720.png"},
-  {url: "../../images/gifPruebas.gif"},
-  {url: "../../images/chart-1080-720.png"},
-  {url: "../../images/gifPruebas.gif"},
+  {url: "../../images/of1.gif"},
+  {url: "../../images/of2.gif"},
+  {url: "../../images/of3.gif"},
+  {url: "../../images/of4.gif"},
 ];
 
 
 imgButton1.addEventListener("click", () => {
-  principal.src = "../../images/chart-1080-720.png";
+  principal.src = "../../images/of1.gif";
   move = false;
   paybutton.classList.remove("hide");
 
 });
 
 imgButton2.addEventListener("click", () => {
-  principal.src = "../../images/gifPruebas.gif";
+  principal.src = "../../images/of2.gif";
   move = false;
   paybutton.classList.remove("hide");
 });
+
+imgButton3.addEventListener("click", () => {
+  principal.src = "../../images/of3.gif";
+  move = false;
+  paybutton.classList.remove("hide");
+});
+
+imgButton4.addEventListener("click", () => {
+  principal.src = "../../images/of4.gif";
+  move = false;
+  paybutton.classList.remove("hide");
+});
+
+
 
 
 paybutton.addEventListener("click", () => {

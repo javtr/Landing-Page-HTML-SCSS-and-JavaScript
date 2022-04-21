@@ -1268,8 +1268,14 @@ a:hover {
 
 @media (min-width: 64em) {
   .buy__card {
-    padding: 5.3125rem 3.125rem;
+    padding: 5.3125rem 2rem;
     margin-bottom: 4.375rem;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .buy__card {
+    padding: 5.3125rem 3rem;
   }
 }
 
@@ -1316,6 +1322,7 @@ a:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 60%;
             flex: 1 1 60%;
+    padding-top: 25px;
   }
 }
 
@@ -1369,7 +1376,13 @@ a:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 40%;
             flex: 1 1 40%;
-    padding: 0px 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .buy__info {
+    padding-left: 45px;
   }
 }
 
@@ -1419,9 +1432,15 @@ a:hover {
 }
 
 .buy__info--list {
-  padding-left: 3.125rem;
+  padding-left: 2.125rem;
   list-style: square;
   margin-bottom: 3.75rem;
+}
+
+@media (min-width: 64em) {
+  .buy__info--list {
+    padding-left: 18px;
+  }
 }
 
 .buy__info--list li {
@@ -1430,6 +1449,18 @@ a:hover {
   color: #817f7f;
   font-size: 1.125rem;
   margin-bottom: 0.625rem;
+}
+
+@media (min-width: 64em) {
+  .buy__info--list li {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .buy__info--list li {
+    font-size: 1.125rem;
+  }
 }
 
 .buy__info--price {
