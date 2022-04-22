@@ -11,34 +11,34 @@ let move = true;
 
 
 let imgUrl = [
-  {url: "../../images/of1.gif"},
-  {url: "../../images/of2.gif"},
-  {url: "../../images/of3.gif"},
-  {url: "../../images/of4.gif"},
+  {url: "../../images/pa1.gif"},
+  {url: "../../images/pa2.gif"},
+  {url: "../../images/pa3.gif"},
+  {url: "../../images/pa4.gif"},
 ];
 
 
 imgButton1.addEventListener("click", () => {
-  principal.src = "../../images/of1.gif";
+  principal.src = "../../images/pa1.gif";
   move = false;
   paybutton.classList.remove("hide");
 
 });
 
 imgButton2.addEventListener("click", () => {
-  principal.src = "../../images/of2.gif";
+  principal.src = "../../images/pa2.gif";
   move = false;
   paybutton.classList.remove("hide");
 });
 
 imgButton3.addEventListener("click", () => {
-  principal.src = "../../images/of3.gif";
+  principal.src = "../../images/pa3.gif";
   move = false;
   paybutton.classList.remove("hide");
 });
 
 imgButton4.addEventListener("click", () => {
-  principal.src = "../../images/of4.gif";
+  principal.src = "../../images/pa4.jpg";
   move = false;
   paybutton.classList.remove("hide");
 });
@@ -60,7 +60,7 @@ moveslider = () => {
   principal.src = imgUrl[cont].url;
   cont++;
 
-  if(cont==2){
+  if(cont==4){
     cont=0;
   }
 

@@ -5,31 +5,48 @@ const imgButton33 = document.querySelector("#item33");
 const imgButton43 = document.querySelector("#item43");
 const paybutton3 = document.querySelector("#play3");
 
-let speed3 = 2000;
+let speed3 = 10000;
 let cont3 = 0;
 let move3 = true;
 
 
 let imgUrl3 = [
-  {url: "../../images/chart-1080-720.png"},
-  {url: "../../images/gifPruebas.gif"},
-  {url: "../../images/chart-1080-720.png"},
-  {url: "../../images/gifPruebas.gif"},
+  {url: "../../images/an1.gif"},
+  {url: "../../images/an2.jpg"},
+  {url: "../../images/an3.gif"},
+  {url: "../../images/an4.jpg"},
 ];
 
 
 imgButton13.addEventListener("click", () => {
-  principal3.src = "../../images/chart-1080-720.png";
+  principal3.src = "../../images/an1.gif";
   move3 = false;
   paybutton3.classList.remove("hide");
 
 });
 
 imgButton23.addEventListener("click", () => {
-  principal3.src = "../../images/gifPruebas.gif";
+  principal3.src = "../../images/an2.jpg";
   move3 = false;
   paybutton3.classList.remove("hide");
 });
+
+imgButton33.addEventListener("click", () => {
+  principal3.src = "../../images/an3.gif";
+  move3 = false;
+  paybutton3.classList.remove("hide");
+
+});
+
+imgButton43.addEventListener("click", () => {
+  principal3.src = "../../images/an4.jpg";
+  move3 = false;
+  paybutton3.classList.remove("hide");
+});
+
+
+
+
 
 
 paybutton3.addEventListener("click", () => {
@@ -46,7 +63,7 @@ moveslider3 = () => {
   principal3.src = imgUrl3[cont3].url;
   cont3++;
 
-  if(cont3==2){
+  if(cont3==4){
     cont3=0;
   }
 
