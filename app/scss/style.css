@@ -2283,12 +2283,12 @@ a:hover {
   margin-bottom: 60px;
 }
 
-.notfound__logo > img {
+.notfound__logo > a > img {
   width: 200px;
 }
 
 @media (min-width: 64em) {
-  .notfound__logo > img {
+  .notfound__logo > a > img {
     width: 300px;
   }
 }

@@ -5,7 +5,7 @@
         width: 100%;
         margin-bottom: 60px;
 
-        &>img{
+        &>a>img{
             width:200px;
 
             @include breakpoint-up(large) {
