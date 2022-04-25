@@ -323,6 +323,17 @@ a:hover {
   }
 }
 
+.container--notfound {
+  padding: 30px 16px;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .container--notfound {
+    padding: 100px 60px;
+  }
+}
+
 .button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
@@ -2264,5 +2275,87 @@ a:hover {
 .footer .attribution {
   margin-top: 4rem;
   font-size: 0.875rem;
+}
+
+.notfound__logo {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.notfound__logo > img {
+  width: 200px;
+}
+
+@media (min-width: 64em) {
+  .notfound__logo > img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 64em) {
+  .notfound__logo {
+    margin-bottom: 100px;
+  }
+}
+
+.notfound__title {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #516580;
+  font-size: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .notfound__title {
+    font-size: 55px;
+  }
+}
+
+.notfound__subtitle {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #516580;
+  font-size: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .notfound__subtitle {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+}
+
+.notfound__button {
+  display: inline-block;
+  padding: 0.875rem 2.25rem;
+  background: -webkit-gradient(linear, left top, right top, from(#00add3), to(#2fedcb));
+  background: linear-gradient(to right, #00add3, #2fedcb);
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.notfound__button > a {
+  color: #ffffff;
+}
+
+@media (min-width: 64em) {
+  .notfound__button {
+    font-size: 20px;
+    padding: 0.875rem 3.25rem;
+  }
+}
+
+.notfound__button:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=style.css.map */

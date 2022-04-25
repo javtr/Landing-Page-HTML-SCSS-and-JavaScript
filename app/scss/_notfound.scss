@@ -1,0 +1,90 @@
+.notfound{
+
+    &__logo{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 60px;
+
+        &>img{
+            width:200px;
+
+            @include breakpoint-up(large) {
+                width:300px;
+            }             
+        }
+
+        @include breakpoint-up(large) {
+            margin-bottom: 100px;
+        } 
+
+
+    }
+
+
+    &__title{
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkBlue;
+    
+        font-size: 40px;
+        margin-bottom: 5px;
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            font-size: 55px;
+        }  
+
+    }
+
+    &__subtitle{
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkBlue;
+    
+        font-size: 20px;
+        margin-bottom: 60px;
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            font-size: 24px;
+            margin-bottom: 100px;
+        }  
+
+    }
+
+
+
+
+    &__button{
+        display: inline-block;
+        padding: 0.875rem 2.25rem;
+        background: linear-gradient(to right, $blue, $green-blue);
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        transition: opacity 300ms ease-in-out;
+      
+        &>a{
+            color: $white;
+        }
+
+
+
+
+        @include breakpoint-up(large) {
+            font-size: 20px;
+            padding: 0.875rem 3.25rem;
+        }  
+      
+        &:hover {
+          opacity: 0.75;
+        }
+
+    }
+
+
+
+
+}

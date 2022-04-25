@@ -220,7 +220,21 @@ a:hover {
       padding: 100px 60px;
     }
   }
+
+  &--notfound {
+    padding: 30px 16px;
+    text-align:center;
+
+    @include breakpoint-up("large") {
+      padding: 100px 60px;
+    }
+  }
+
+
 }
+
+
+
 
 // .container {
 //   max-width: 69.375rem;
@@ -330,9 +344,6 @@ a:hover {
   @include breakpoint-up(medium) {
     font-size: 14px;
   } 
-
-
-
 
   &:hover {
     opacity: 0.75;
