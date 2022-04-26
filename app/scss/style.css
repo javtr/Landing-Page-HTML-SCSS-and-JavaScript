@@ -558,7 +558,7 @@ a:hover {
   height: 50px;
   background: -webkit-gradient(linear, left top, right top, from(#00add3), to(#2fedcb));
   background: linear-gradient(to right, #00add3, #2fedcb);
-  opacity: 0.6;
+  opacity: 0.4;
   border-radius: 50%;
 }
 
