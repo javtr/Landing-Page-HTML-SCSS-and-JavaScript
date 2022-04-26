@@ -551,11 +551,20 @@ a:hover {
 }
 
 .scrollUp > a {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: #00acd33d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#00add3), to(#2fedcb));
+  background: linear-gradient(to right, #00add3, #2fedcb);
+  opacity: 0.6;
   border-radius: 50%;
+}
+
+.scrollUp > a > img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .header {

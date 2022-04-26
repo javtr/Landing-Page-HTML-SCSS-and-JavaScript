@@ -38,7 +38,9 @@ botonUp.classList.add("scrollUp");
 botonUp.classList.add("hide-for-all");
 
 botonUp.innerHTML=
-  `<a href="#"></a>`;
+  `<a href="#">
+  <img src="../../images/chevron.svg" />
+  </a>`;
 
 document.body.appendChild(botonUp);
 

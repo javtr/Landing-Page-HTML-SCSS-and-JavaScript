@@ -451,11 +451,19 @@ a:hover {
   right: 15px;
 
   &>a{
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-color: #00acd33d;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right, $blue, $green-blue);
+    opacity: 0.6;
     border-radius: 50%;
+
+
+
   }
+
+  &>a>img{
+    filter: invert(1);
+  }  
 }
 
