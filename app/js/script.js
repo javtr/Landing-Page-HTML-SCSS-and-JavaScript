@@ -8,66 +8,54 @@ const btnLangInd = document.querySelector("#btnLang-ind");
 const btnLangBuy = document.querySelector("#btnLang-buy");
 const btnLangCont = document.querySelector("#btnLang-cont");
 
-
 if (btnMenu) {
-  
+  btnMenu.addEventListener("click", function () {
+    if (header.classList.contains("open")) {
+      header.classList.remove("open");
 
-btnMenu.addEventListener("click", function () {
-  if (header.classList.contains("open")) {
-    header.classList.remove("open");
+      body.classList.remove("noscroll");
 
-    body.classList.remove("noscroll");
+      fadeElements.forEach((element) => {
+        element.classList.remove("fade-in");
+        element.classList.add("fade-out");
+      });
+    } else {
+      header.classList.add("open");
 
-    fadeElements.forEach((element) => {
-      element.classList.remove("fade-in");
-      element.classList.add("fade-out");
-    });
-  } else {
-    header.classList.add("open");
+      body.classList.add("noscroll");
 
-    body.classList.add("noscroll");
+      fadeElements.forEach((element) => {
+        element.classList.remove("fade-out");
+        element.classList.add("fade-in");
+      });
+    }
+  });
+}
 
-    fadeElements.forEach((element) => {
-      element.classList.remove("fade-out");
-      element.classList.add("fade-in");
-    });
+//boton volver arriba
+var botonUp = document.createElement("div");
+botonUp.classList.add("scrollUp");
+botonUp.classList.add("hide-for-all");
+
+botonUp.innerHTML=
+  `<a href="#"></a>`;
+
+document.body.appendChild(botonUp);
+
+
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+
+  if (scroll > 500) {
+    botonUp.classList.remove("hide-for-all");
+    botonUp.classList.remove("fade-out-scrollUp");
+    botonUp.classList.add("fade-in-scrollUp");
+
+  }else{
+    botonUp.classList.remove("fade-in-scrollUp");
+    botonUp.classList.add("fade-out-scrollUp");
   }
 });
 
-}
 
 
-// if (btnLangLogic) {
-//   btnLangLogic.addEventListener("click", function () {
-
-
-//     if (btnLangLogic.classList.contains("header__lang-desktop-es")) {
-//       btnLangLogic.classList.remove("header__lang-desktop-es");
-//       btnLangLogic.classList.add("header__lang-desktop-en");
-
-//       location.href= "app/en/index.html";
-
-//     } else {
-//       btnLangLogic.classList.remove("header__lang-desktop-en");
-//       btnLangLogic.classList.add("header__lang-desktop-es");
-
-//       location.href= "/index.html";
-
-
-//     }
-//   });
-// }
-
-// if (btnLangInd) {
-//   btnLangInd.addEventListener("click", function () {
-//     console.log(location.href);
-
-//     if (btnLangInd.classList.contains("header__lang-desktop-es")) {
-//       btnLangInd.classList.remove("header__lang-desktop-es");
-//       btnLangInd.classList.add("header__lang-desktop-en");
-//     } else {
-//       btnLangInd.classList.remove("header__lang-desktop-en");
-//       btnLangInd.classList.add("header__lang-desktop-es");
-//     }
-//   });
-// }

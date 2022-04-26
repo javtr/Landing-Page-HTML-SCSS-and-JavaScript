@@ -439,3 +439,23 @@ a:hover {
     display: none;
   }
 }
+
+.hide-for-all{
+  display: none;
+}
+
+
+.scrollUp{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+
+  &>a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #00acd33d;
+    border-radius: 50%;
+  }
+}
+
