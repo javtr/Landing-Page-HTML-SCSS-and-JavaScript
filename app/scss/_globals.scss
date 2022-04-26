@@ -450,18 +450,19 @@ a:hover {
   bottom: 15px;
   right: 15px;
 
+
   &>a{
-    display: flex;
+    display: block;
     width: 50px;
     height: 50px;
     background: linear-gradient(to right, $blue, $green-blue);
     opacity: 0.4;
     border-radius: 50%;
-
   }
 
-  &>a>img{
-    filter: invert(1);
+  &>a>svg{
+    transform: scale(2.15);
+    transform-origin: 0px 1px;
   }  
 }
 
