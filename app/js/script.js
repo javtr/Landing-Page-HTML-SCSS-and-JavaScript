@@ -37,8 +37,7 @@ var botonUp = document.createElement("div");
 botonUp.classList.add("scrollUp");
 botonUp.classList.add("hide-for-all");
 
-botonUp.innerHTML=
-  `<a href="#">
+botonUp.innerHTML = `<a href="#">
   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
       <path
         fill="#FFF"
@@ -49,7 +48,6 @@ botonUp.innerHTML=
 
 document.body.appendChild(botonUp);
 
-
 window.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
 
@@ -57,12 +55,17 @@ window.addEventListener("scroll", (event) => {
     botonUp.classList.remove("hide-for-all");
     botonUp.classList.remove("fade-out-scrollUp");
     botonUp.classList.add("fade-in-scrollUp");
-
-  }else{
+  } else {
     botonUp.classList.remove("fade-in-scrollUp");
     botonUp.classList.add("fade-out-scrollUp");
   }
 });
 
+//payment datetime
 
+date = document.querySelector("#date");
 
+if (date) {
+  var d = new Date();
+  date.innerHTML =  d.toLocaleDateString(); 
+}

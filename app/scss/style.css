@@ -1788,7 +1788,7 @@ a:hover {
 
 .payment__date {
   position: absolute;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.15;
   color: #ffffff;
   font-size: 0.875rem;
@@ -2189,7 +2189,7 @@ a:hover {
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     gap: 1rem;
     justify-items: start;
   }
