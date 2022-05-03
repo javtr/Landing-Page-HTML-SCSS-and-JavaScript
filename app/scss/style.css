@@ -2187,6 +2187,19 @@ a:hover {
   }
 }
 
+.form__captcha {
+  position: relative;
+  height: 100px;
+}
+
+.form__captcha--box {
+  position: absolute;
+  left: -30px;
+  top: 0px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .footer {
   background-color: #1c2d45;
   color: #ffffff;

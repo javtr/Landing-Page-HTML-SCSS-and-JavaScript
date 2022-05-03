@@ -13,29 +13,29 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 
 // Do some validation, check to make sure the name, email and message are valid.
-// if (empty($_POST['g-recaptcha-response'])) {
-//     redirectWithError("Por favor completa el CAPTCHA.");
-// }
+if (empty($_POST['g-recaptcha-response'])) {
+    redirectWithError("Por favor completa el CAPTCHA.");
+}
 
-// $recaptcha = new \ReCaptcha\ReCaptcha(CONTACTFORM_RECAPTCHA_SECRET_KEY);
-// $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_REQUEST['REMOTE_ADDR']);
+$recaptcha = new \ReCaptcha\ReCaptcha(CONTACTFORM_RECAPTCHA_SECRET_KEY);
+$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_REQUEST['REMOTE_ADDR']);
 
-// if (!$resp->isSuccess()) {
-//     $errors = $resp->getErrorCodes();
-//     $error = $errors[0];
+if (!$resp->isSuccess()) {
+    $errors = $resp->getErrorCodes();
+    $error = $errors[0];
 
-//     $recaptchaErrorMapping = [
-//         'missing-input-secret' => 'No reCAPTCHA secret key was submitted.',
-//         'invalid-input-secret' => 'The submitted reCAPTCHA secret key was invalid.',
-//         'missing-input-response' => 'No reCAPTCHA response was submitted.',
-//         'invalid-input-response' => 'The submitted reCAPTCHA response was invalid.',
-//         'bad-request' => 'An unknown error occurred while trying to validate your response.',
-//         'timeout-or-duplicate' => 'The request is no longer valid. Please try again.',
-//     ];
+    $recaptchaErrorMapping = [
+        'missing-input-secret' => 'No reCAPTCHA secret key was submitted.',
+        'invalid-input-secret' => 'The submitted reCAPTCHA secret key was invalid.',
+        'missing-input-response' => 'No reCAPTCHA response was submitted.',
+        'invalid-input-response' => 'The submitted reCAPTCHA response was invalid.',
+        'bad-request' => 'An unknown error occurred while trying to validate your response.',
+        'timeout-or-duplicate' => 'The request is no longer valid. Please try again.',
+    ];
 
-//     $errorMessage = $recaptchaErrorMapping[$error];
-//     redirectWithError("Por favor completa el CAPTCHA: ".$errorMessage);
-// }
+    $errorMessage = $recaptchaErrorMapping[$error];
+    redirectWithError("Por favor completa el CAPTCHA: ".$errorMessage);
+}
 
 
 
