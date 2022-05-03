@@ -23,9 +23,9 @@ define('CONTACTFORM_SMTP_PASSWORD', 'rcyvexsnorngazgw');
 
 
 // The reCAPTCHA credentials for your site. You can get these at https://www.google.com/recaptcha/admin
-define('CONTACTFORM_RECAPTCHA_SITE_KEY', '6LckQzYbAAAAACchRcTZ-T4RcoEBkDTAQtVLQpzH');
-define('CONTACTFORM_RECAPTCHA_SECRET_KEY', '6LckQzYbAAAAAPy2k5jb2IeI0101h4_vEB7YXDDr');
-
+    define('CONTACTFORM_RECAPTCHA_SITE_KEY', '6Ld2wr4fAAAAAJ3Op2VrKv4Vzn865fJm8wPcRh0e');
+    define('CONTACTFORM_RECAPTCHA_SECRET_KEY', '6Ld2wr4fAAAAAOBRXktWM6IWMoLWOju2HxZQx4uk');
+    
 /**
  * Optional Settings
  */

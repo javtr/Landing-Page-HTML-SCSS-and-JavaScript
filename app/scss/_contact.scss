@@ -67,7 +67,7 @@
     border-radius: 0.3125rem;
     border: 1px solid $mediumGray;
     height: 11.875rem;
-    margin-bottom: 3.75rem;
+    margin-bottom: 1.8rem;
     color: $darkBlue;
     padding: 20px 20px;
     box-sizing: border-box;
@@ -79,6 +79,31 @@
 
     resize: vertical;
   }
+
+
+  &__captcha{
+    position: relative;
+    height: 100px;
+
+    &--box{
+      position: absolute;
+      left: -30px;
+      top: 0px;
+      transform: scale(0.8);
+
+
+    }
+
+
+
+
+
+  }
+
+
+
+
+
 }
 
 
