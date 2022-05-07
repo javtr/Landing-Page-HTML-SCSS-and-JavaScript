@@ -32,9 +32,12 @@ if (!empty($_SESSION['_contact_form_success'])) {
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
+      
     />
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="icon" href="../../../images/icono.ico">
+
   </head>
 
 

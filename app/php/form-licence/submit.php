@@ -35,29 +35,29 @@ if (!$resp->isSuccess()) {
     ];
 
     $errorMessage = $recaptchaErrorMapping[$error];
-    redirectWithError("Por favor completa el CAPTCHA: ".$errorMessage);
+    redirectWithError("Please complete the CAPTCHA: ".$errorMessage);
 }
 
 
 if (empty($_POST['name'])) {
-    redirectWithError("Por favor ingresa tu nombre.");
+    redirectWithError("Please enter your name.");
 }
 
 if (empty($_POST['email'])) {
-    redirectWithError("Por favor ingresa tu email.");
+    redirectWithError("Please enter your email address.");
 }
 
 if (empty($_POST['idmachine'])) {
-    redirectWithError("Por favor ingresa tu idmachine.");
+    redirectWithError("Please enter your idmachine.");
 }
 
 
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    redirectWithError("Por favor ingresa un email valido.");
+    redirectWithError("Please enter a valid email address.");
 }
 
 if (strlen($_POST['message']) > 2000) {
-    redirectWithError("Por favor ingresa menos de 2000 caracteres en el espacio de mensaje.");
+    redirectWithError("Please enter less than 2000 characters in the message space.");
 }
 
 // Everything seems OK, time to send the email.

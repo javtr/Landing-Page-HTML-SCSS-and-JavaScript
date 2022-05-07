@@ -35,7 +35,8 @@ if (!empty($_SESSION['_form_form_success'])) {
     />
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+    <link rel="icon" href="../../../images/icono.ico">
+
   </head>
 
 
