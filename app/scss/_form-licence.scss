@@ -205,4 +205,20 @@
       font-size: 16px;
     }
   }
+
+  &__captcha{
+    position: relative;
+    height: 100px;
+
+    &--box{
+      position: absolute;
+      left: -30px;
+      top: 0px;
+      transform: scale(0.8);
+    }
+  }
+
+
+
+
 }

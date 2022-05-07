@@ -25,7 +25,7 @@
         <div class="payment__card-order">
           <div class="payment__header">
             <div class="payment__title">Order Payment</div>
-            <div class="payment__date">12/03/2022</div>
+            <div  id="date" class="payment__date">-</div>
           </div>
 
           <div class="payment__content">
@@ -35,12 +35,12 @@
               <div class="payment__item">Price</div>
               <div class="payment__item">OrderFlow + Analytics</div>
               <div class="payment__item">Lifetime</div>
-              <div class="payment__item">497</div>
+              <div class="payment__item">247</div>
             </div>
 
             <hr class="payment__line" />
             <div class="payment__total">
-              <p>Total: $497 Usd</p>
+              <p>Total: $247 Usd</p>
             </div>
             
           </div>
@@ -78,7 +78,7 @@
 
                                         return actions.order.create({
 
-                                            purchase_units: [{ "amount": { "currency_code": "USD", "value": 192 } }]
+                                            purchase_units: [{ "amount": { "currency_code": "USD", "value": 247 } }]
 
                                         });
 
@@ -115,7 +115,7 @@
                                                 var data = new FormData();
                                                 data.append("upfile", myBlob);
                                                 // (C) AJAX UPLOAD TO SERVER
-                                                fetch("../inserv/3b-upload.php", {
+                                                fetch("../../inserv/3b-upload.php", {
                                                     method: "POST",
                                                     body: data,
                                                 })

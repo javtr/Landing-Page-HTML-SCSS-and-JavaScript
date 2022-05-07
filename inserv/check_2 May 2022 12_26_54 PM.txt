@@ -1,0 +1,82 @@
+Last Sync: 2/5/2022 @ 12:26:54  -- Pack --  {
+  "id": "5AS508406N007230E",
+  "intent": "CAPTURE",
+  "status": "COMPLETED",
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": {
+        "currency_code": "USD",
+        "value": "247.00"
+      },
+      "payee": {
+        "email_address": "barco.03-facilitator@gmail.com",
+        "merchant_id": "YQZCHTGHUK5P8"
+      },
+      "soft_descriptor": "PAYPAL *PYPLTEST",
+      "shipping": {
+        "name": {
+          "full_name": "John Doe"
+        },
+        "address": {
+          "address_line_1": "Free Trade Zone",
+          "admin_area_2": "Bogota",
+          "admin_area_1": "Bogota",
+          "postal_code": "110111",
+          "country_code": "CO"
+        }
+      },
+      "payments": {
+        "captures": [
+          {
+            "id": "97061382FX602142S",
+            "status": "COMPLETED",
+            "amount": {
+              "currency_code": "USD",
+              "value": "247.00"
+            },
+            "final_capture": true,
+            "seller_protection": {
+              "status": "ELIGIBLE",
+              "dispute_categories": [
+                "ITEM_NOT_RECEIVED",
+                "UNAUTHORIZED_TRANSACTION"
+              ]
+            },
+            "create_time": "2022-05-02T17:26:53Z",
+            "update_time": "2022-05-02T17:26:53Z"
+          }
+        ]
+      }
+    }
+  ],
+  "payer": {
+    "name": {
+      "given_name": "John",
+      "surname": "Doe"
+    },
+    "email_address": "sb-47udfk6261418@personal.example.com",
+    "payer_id": "CA8KDJFKGFLAA",
+    "phone": {
+      "phone_number": {
+        "national_number": "5794500081"
+      }
+    },
+    "address": {
+      "address_line_1": "Free Trade Zone",
+      "admin_area_2": "Bogota",
+      "admin_area_1": "Bogota",
+      "postal_code": "110111",
+      "country_code": "CO"
+    }
+  },
+  "create_time": "2022-05-02T17:26:28Z",
+  "update_time": "2022-05-02T17:26:53Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/5AS508406N007230E",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}

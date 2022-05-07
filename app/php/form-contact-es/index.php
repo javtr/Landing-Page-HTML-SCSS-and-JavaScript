@@ -33,6 +33,9 @@ if (!empty($_SESSION['_contact_form_success'])) {
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
   </head>
 
 
@@ -117,6 +120,11 @@ if (!empty($_SESSION['_contact_form_success'])) {
 
                   <div class="contact__label-form">Message<span>*</span></div>
                   <textarea type="text" name="message" id="message" class="contact__input-form-text" placeholder=""></textarea>
+
+                  <div class="form-group text-center contact__captcha">
+                    <div class="g-recaptcha contact__captcha--box" data-sitekey="<?= CONTACTFORM_RECAPTCHA_SITE_KEY ?>"></div>
+                  </div>
+                  
 
               <button class="btn btn-primary btn-block btn button-contact">Send Message</button>
             </form>
