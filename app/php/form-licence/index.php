@@ -24,7 +24,7 @@ if (!empty($_SESSION['_form_form_success'])) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Purchase Form - Logic Indicators</title>
     <link rel="stylesheet" href="../../scss/style.css" />
     <link rel="stylesheet" href="../../scss/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -115,7 +115,7 @@ if (!empty($_SESSION['_form_form_success'])) {
 
 
             <div class="form__numeral2">
-                <p>2. After submitting this form, we will create the license for your pc.</p>
+                <p>2. After submitting this form, we will create the license for your pcg.</p>
             </div>
 
 
