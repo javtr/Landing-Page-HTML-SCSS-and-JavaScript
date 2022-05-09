@@ -27,6 +27,11 @@
     margin-bottom: 0.9375rem;
 
     text-align: center;
+    position: relative;
+    padding-top: 35px;
+
+
+
 
     img {
       width: 100%;
@@ -35,6 +40,30 @@
         width: 90%;
       }
     }
+
+    &--notick{
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 170px;
+      text-align: left;
+      background: linear-gradient(to right, $blue, $green-blue);
+      border-radius: 0px 15px 15px 0px;
+      padding: 6px 10px;
+      color: white;
+      font-size: 14px;
+      
+      @include breakpoint-up(large) {
+        font-size: 16px;
+        padding: 8px 12px;
+        width: 205px;
+      }      
+
+
+
+    }
+
+
   }
 
   &__description {

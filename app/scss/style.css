@@ -1722,6 +1722,8 @@ a:hover {
 .feature__image {
   margin-bottom: 0.9375rem;
   text-align: center;
+  position: relative;
+  padding-top: 35px;
 }
 
 .feature__image img {
@@ -1731,6 +1733,28 @@ a:hover {
 @media (min-width: 40em) {
   .feature__image img {
     width: 90%;
+  }
+}
+
+.feature__image--notick {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 170px;
+  text-align: left;
+  background: -webkit-gradient(linear, left top, right top, from(#00add3), to(#2fedcb));
+  background: linear-gradient(to right, #00add3, #2fedcb);
+  border-radius: 0px 15px 15px 0px;
+  padding: 6px 10px;
+  color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 64em) {
+  .feature__image--notick {
+    font-size: 16px;
+    padding: 8px 12px;
+    width: 205px;
   }
 }
 
