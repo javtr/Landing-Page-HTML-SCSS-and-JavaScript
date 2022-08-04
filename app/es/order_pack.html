@@ -1,165 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orden de compra - Logic Indicators</title>
-    <link rel="stylesheet" href="../scss/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="../../images/icono.ico">
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orden de compra - Logic Indicators</title>
+  <link rel="stylesheet" href="../scss/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../../images/icono.ico">
 
-  <body>
+</head>
 
-    <section class="payment">
-      <div class="container container--payment">
-        <div class="payment__logo">
+<body>
+
+  <section class="payment">
+    <div class="container container--payment">
+      <div class="payment__logo">
+        <a href="../../index.html">
           <img src="../../images/logo_logic04.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="payment__card-order">
+        <div class="payment__header">
+          <div class="payment__title">Order Payment</div>
+          <div id="date" class="payment__date">-</div>
         </div>
 
-        <div class="payment__card-order">
-          <div class="payment__header">
-            <div class="payment__title">Order Payment</div>
-            <div id="date" class="payment__date">-</div>
+        <div class="payment__content">
+          <div class="payment__table">
+            <div class="payment__item">Product</div>
+            <div class="payment__item">Licence</div>
+            <div class="payment__item">Price</div>
+            <div class="payment__item">Logic Pack</div>
+            <div class="payment__item">Lifetime</div>
+            <div class="payment__item">$247</div>
           </div>
 
-          <div class="payment__content">
-            <div class="payment__table">
-              <div class="payment__item">Product</div>
-              <div class="payment__item">Licence</div>
-              <div class="payment__item">Price</div>
-              <div class="payment__item">OrderFlow + Analytics</div>
-              <div class="payment__item">Lifetime</div>
-              <div class="payment__item">247</div>
-            </div>
-
-            <hr class="payment__line" />
-            <div class="payment__total">
-              <p>Total: $247 Usd</p>
-            </div>
-            
+          <hr class="payment__line" />
+          <div class="payment__total">
+            <p>Total: $247 Usd</p>
           </div>
+
         </div>
+      </div>
 
-        <div class="payment__card-pay">
-          <div class="payment__pay">
-            <div class="payment__pay-button">
-              <a href="https://sso.teachable.com/secure/474922/checkout/4059024/logic-indicators" target="_blank" class="button-teach">Tarjeta de crédito</a>
-              <p>Desarrollado por <span>Teachable</span></p>
-            </div>
-            <div class="payment__line"></div>
-            <div class="payment__pay-button">
-              <div class="paypal">
-                <div class="content">
-                    <div class="accion">
-                        <div id="smart-button-container">
-                            <div style="text-align: center;">
-                                <div id="paypal-button-container"></div>
-                            </div>
-                        </div>
-                        <script
-                            src="https://www.paypal.com/sdk/js?client-id=AVcTD2Bf47MXHQdROnmhRRug9iUXmX6ylQfZV0KdcmiRj24gnbEVp_JfJJVQBlCpTdtVUgEx0rbZtPk1"
-                            data-sdk-integration-source="button-factory"></script>
-                        <script>
-                            function initPayPalButton() {
-                                paypal.Buttons({
-                                    style: {
-                                        shape: 'rect',
-                                        color: 'blue',
-                                        layout: 'vertical',
-                                        label: 'paypal',
-                                    },
-                                    createOrder: function (data, actions) {
-
-                                        return actions.order.create({
-
-                                            purchase_units: [{ "amount": { "currency_code": "USD", "value": 247 } }]
-
-                                        });
-
-
-
-
-                                    },
-                                    onApprove: function (data, actions) {
-
-                                        return actions.order.capture().then(function (details) {
-
-
-                                            try {
-                                                var currentdate = new Date();
-                                                var datetime = "Last Sync: " + currentdate.getDate() + "/" +
-                                                    (currentdate.getMonth() + 1) +
-                                                    "/" +
-                                                    currentdate.getFullYear() +
-                                                    " @ " +
-                                                    currentdate.getHours() +
-                                                    ":" +
-                                                    currentdate.getMinutes() +
-                                                    ":" +
-                                                    currentdate.getSeconds() +
-
-                                                    "  -- Pack --  " +
-
-                                                    JSON.stringify(details, null, 2);
-
-
-                                                // (A) CREATE BLOB OBJECT
-                                                var myBlob = new Blob([datetime], { type: "text/plain" });
-                                                // (B) FORM DATA
-                                                var data = new FormData();
-                                                data.append("upfile", myBlob);
-                                                // (C) AJAX UPLOAD TO SERVER
-                                                fetch("../../inserv/3b-upload.php", {
-                                                    method: "POST",
-                                                    body: data,
-                                                })
-                                                    .then((res) => { return res.text(); })
-                                                    .then((txt) => { console.log(txt); });
-                                            } catch (error) {
-
-                                            }
-
-                                            window.location.href = "../php/form-licence-es/";
-                                        });
-                                    },
-                                    onError: function (err) {
-                                        console.log(err);
-                                    }
-                                }).render('#paypal-button-container');
-                            }
-                            initPayPalButton();
-                        </script>
+      <div class="payment__card-pay">
+        <div class="payment__pay">
+          <div class="payment__pay-button">
+            <a href="https://sso.teachable.com/secure/474922/checkout/4059024/logic-indicators" target="_blank"
+              class="button-teach">Tarjeta de crédito</a>
+            <p>Desarrollado por <span>Teachable</span></p>
+          </div>
+          <div class="payment__line"></div>
+          <div class="payment__pay-button">
+            <div class="paypal">
+              <div class="content">
+                <div class="accion">
+                  <div id="smart-button-container">
+                    <div style="text-align: center;">
+                      <div id="paypal-button-container"></div>
                     </div>
+                  </div>
+                  <script
+                    src="https://www.paypal.com/sdk/js?client-id=AVcTD2Bf47MXHQdROnmhRRug9iUXmX6ylQfZV0KdcmiRj24gnbEVp_JfJJVQBlCpTdtVUgEx0rbZtPk1"
+                    data-sdk-integration-source="button-factory"></script>
+                  <script>
+                    function initPayPalButton() {
+                      paypal.Buttons({
+                        style: {
+                          shape: 'rect',
+                          color: 'blue',
+                          layout: 'vertical',
+                          label: 'paypal',
+                        },
+                        createOrder: function (data, actions) {
+
+                          return actions.order.create({
+
+                            purchase_units: [{ "amount": { "currency_code": "USD", "value": 247 } }]
+
+                          });
+
+
+
+
+                        },
+                        onApprove: function (data, actions) {
+
+                          return actions.order.capture().then(function (details) {
+
+
+                            try {
+                              var currentdate = new Date();
+                              var datetime = "Last Sync: " + currentdate.getDate() + "/" +
+                                (currentdate.getMonth() + 1) +
+                                "/" +
+                                currentdate.getFullYear() +
+                                " @ " +
+                                currentdate.getHours() +
+                                ":" +
+                                currentdate.getMinutes() +
+                                ":" +
+                                currentdate.getSeconds() +
+
+                                "  -- Pack --  " +
+
+                                JSON.stringify(details, null, 2);
+
+
+                              // (A) CREATE BLOB OBJECT
+                              var myBlob = new Blob([datetime], { type: "text/plain" });
+                              // (B) FORM DATA
+                              var data = new FormData();
+                              data.append("upfile", myBlob);
+                              // (C) AJAX UPLOAD TO SERVER
+                              fetch("../../inserv/3b-upload.php", {
+                                method: "POST",
+                                body: data,
+                              })
+                                .then((res) => { return res.text(); })
+                                .then((txt) => { console.log(txt); });
+                            } catch (error) {
+
+                            }
+
+                            window.location.href = "../php/form-licence-es/";
+                          });
+                        },
+                        onError: function (err) {
+                          console.log(err);
+                        }
+                      }).render('#paypal-button-container');
+                    }
+                    initPayPalButton();
+                  </script>
                 </div>
+              </div>
             </div>
 
 
-            </div>
           </div>
+        </div>
 
-          <div class="payment__sep-line"></div>
+        <div class="payment__sep-line"></div>
 
-          <div class="payment__certified">
-            <div class="payment__certified--img">
-              <img src="../../images/paypal.png" alt="" />
-            </div>
-            <div class="payment__description">
-              <p>* Paga con tarjeta débito o crédito sin necesidad de crear cuenta Paypal</p>
-              <p>* Toda la transacción se realiza de forma segura a través de las plataformas Paypal o Teachable </p>
-            </div>
+        <div class="payment__certified">
+          <div class="payment__certified--img">
+            <img src="../../images/paypal.png" alt="" />
+          </div>
+          <div class="payment__description">
+            <p>* Paga con tarjeta débito o crédito sin necesidad de crear cuenta Paypal</p>
+            <p>* Toda la transacción se realiza de forma segura a través de las plataformas Paypal o Teachable </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="../js/script.js"></script>
-  </body>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
