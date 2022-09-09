@@ -3,16 +3,16 @@
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 
   &__tittle {
-    font-weight: 300;
+    // font-weight: 300;
     line-height: 1.15;
     color: $darkBlue;
 
-    font-size: 1.125rem;
+    // font-size: 1.125rem;
     margin-bottom: 1.25rem;
     text-align: left;
 
     @include breakpoint-up("large") {
-      font-size: 4.0625rem;
+      // font-size: 4.0625rem;
     }
   }
 
@@ -134,12 +134,12 @@
       width: 100%;
 
       @include breakpoint-up("medium") {
-        width: 90%;
+        width: $image-md;
         margin: 15px 0;
       }   
       
       @include breakpoint-up("large") {
-        width: 80%;
+        width: $image-lg;
         margin: 20px 0;
       }   
 

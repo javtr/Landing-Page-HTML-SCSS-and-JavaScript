@@ -1,6 +1,5 @@
 .description {
   background-color: $lightGray;
-  background-color: red;
   
   &__title1{
     padding:20px 0;
@@ -22,12 +21,12 @@
     }
   }
 
-  &__video {
-    video {
-      width: 100%;
-      border-radius: 0.6875rem 0.6875rem 0 0;
-    }
-  }
+  // &__video {
+  //   video {
+  //     width: 100%;
+  //     border-radius: 0.6875rem 0.6875rem 0 0;
+  //   }
+  // }
 
   &__cont{
     margin-top: 40px;
@@ -44,10 +43,6 @@
 
 
     &-content{
-
-      
-
-
 
 
       @include breakpoint-up(large) {
@@ -93,7 +88,7 @@
 
   &__image {
     img {
-      width: 100%;
+      width: $image-lg;
     }
   }
 

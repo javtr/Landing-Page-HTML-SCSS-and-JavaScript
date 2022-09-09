@@ -16,7 +16,9 @@ input {
 }
 
 body {
-  font-family: "Public Sans", sans-serif;
+  // font-family: "Public Sans", sans-serif;
+
+  font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   &.noscroll {
     overflow: hidden;
@@ -27,14 +29,14 @@ h1,
 h2,
 h3,
 .section-title {
-  font-weight: 300;
+  // font-weight: 300;
   line-height: 1.15;
   color: $darkBlue;
 }
 
 h1,
 h2 {
-  font-size: 1.875rem;
+  // font-size: 1.875rem;
   margin-bottom: 2.5rem;
   text-align: center;
 
@@ -59,17 +61,41 @@ h3 {
   }
 }
 
+
+.gl-title1{
+  font-size: $title-1;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+.gl-title2{
+  font-size: $title-2;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.gl-title3{
+  font-size: $title-3;
+  // text-transform: capitalize;
+  font-weight: 800;
+  // color: red;
+}
+
+
+
 .headline-text {
-  font-size: 1.09375rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 400;
   line-height: 1.15;
-  color: $lightBlue;
+  color: $darkGray;
   text-align: center;
 }
 
 .section-text {
   font-size: 1.09375rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.15;
   color: $darkGray;
 
