@@ -11,35 +11,35 @@ let move4 = true;
 
 
 let imgUrl4 = [
+  {url: "../../images/landing_volProfile.gif"},
+  {url: "../../images/buy_profile1.png"},
   {url: "../../images/vp1.png"},
-  {url: "../../images/vp2.png"},
-  {url: "../../images/vp3.png"},
-  {url: "../../images/vp4.png"},
+  {url: "../../images/buy_profile3.png"},
 ];
 
 
 imgButton14.addEventListener("click", () => {
-  principal4.src = "../../images/vp1.png";
+  principal4.src = "../../images/landing_volProfile.gif";
   move4 = false;
   paybutton4.classList.remove("hide");
 
 });
 
 imgButton24.addEventListener("click", () => {
-  principal4.src = "../../images/vp2.png";
+  principal4.src = "../../images/buy_profile1.png";
   move4 = false;
   paybutton4.classList.remove("hide");
 });
 
 imgButton34.addEventListener("click", () => {
-  principal4.src = "../../images/vp3.png";
+  principal4.src = "../../images/vp1.png";
   move4 = false;
   paybutton4.classList.remove("hide");
 
 });
 
 imgButton44.addEventListener("click", () => {
-  principal4.src = "../../images/vp4.png";
+  principal4.src = "../../images/buy_profile3.png";
   move4 = false;
   paybutton4.classList.remove("hide");
 });
