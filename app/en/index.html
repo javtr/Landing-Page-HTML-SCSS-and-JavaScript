@@ -1,337 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical indicators for NinjaTrader</title>
-    <link rel="stylesheet" href="../scss/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="../../images/icono.ico">
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical indicators for NinjaTrader</title>
+  <link rel="stylesheet" href="../scss/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../../images/icono.ico">
 
-  <body>
-    <header class="header">
-      <div class="overlay has-fade"></div>
+</head>
 
-      <nav class="container--navbar flex flex-jc-sb flex-ai-c">
+<body>
 
-        <a class="header__image" href="#">
-          <img src="../../images/logo_logic04.svg" alt="" />
-        </a>
+  <!-- header -->
+  <header class="header">
+    <div class="overlay has-fade"></div>
 
-        <div class="header__links hide-for-mobile">
-          <a href="#">Logic</a>
-          <a href="indicators.html">Indicators</a>
-          <a href="buy.html">Buy</a>
-          <a href="../php/form-contact/">Contact</a>
-        </div>
+    <nav class="container--navbar flex flex-jc-sb flex-ai-c">
 
-        <a href="../../index.html" class="header__lang header__lang--en hide-for-desktop"></a>
+      <a class="header__image" href="#">
+        <img src="../../images/logo_logic04.svg" alt="" />
+      </a>
 
-        <a
-          id="btnLang-logic"
-          href="../../index.html"
-          class="header__lang-desktop-en hide-for-mobile"
-        >
-          <span></span>
-        </a>
-
-        <a id="btnMenu" href="#" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </nav>
-
-      <div class="header__menu has-fade">
+      <div class="header__links hide-for-mobile">
         <a href="#">Logic</a>
         <a href="indicators.html">Indicators</a>
         <a href="buy.html">Buy</a>
         <a href="../php/form-contact/">Contact</a>
       </div>
-    </header>
 
+      <a href="../../index.html" class="header__lang header__lang--en hide-for-desktop"></a>
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero__image"></div>
-        <div class="hero__text container--headline">
-          <h1 class="hero__text--title">PROFESSIONAL TOOLS FOR NON-EXPERTS</h1>
-          <p class="hero__text-head headline-text">
-            Trade with logical and easy-to-interpret patterns.
+      <a id="btnLang-logic" href="../../index.html" class="header__lang-desktop-en hide-for-mobile">
+        <span></span>
+      </a>
+
+      <a id="btnMenu" href="#" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </nav>
+
+    <div class="header__menu has-fade">
+      <a href="#">Logic</a>
+      <a href="indicators.html">Indicators</a>
+      <a href="buy.html">Buy</a>
+      <a href="../php/form-contact/">Contact</a>
+    </div>
+  </header>
+
+  <!-- banner -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__image"></div>
+      <div class="hero__text container--headline">
+        <h1 class="hero__text--title  gl-title1">PROFESSIONAL TOOLS FOR NON-EXPERTS</h1>
+        <p class="hero__text-head headline-text">
+          Trade with logical and easy-to-interpret patterns.
+        </p>
+        <a href="#wi" class="button">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- what is logic? -->
+  <section class="description">
+    <div class="container container--description">
+      <div>
+        <h2 class="gl-title2"  id="wi">WHAT IS LOGIC INDICATORS?</h2>
+      </div>
+
+      <div class="description__card">
+
+        <div class="description__title section-title description__title1">
+          <p class="gl-title3">
+            Analyze the Market in an Organized and Professional Manner
           </p>
-          <a href="#wi" class="button">Read more</a>
         </div>
-      </div>
-    </section>
-  
-    <section class="description">
-      <div class="container container--description">
-        <div>
-          <h2 id="wi">WHAT IS LOGIC INDICATORS?</h2>
+
+
+        <div class="description__image">
+          <img src="../../images/landing_3indicators.png" alt="" />
         </div>
-  
-        <div class="description__card">
-  
-          <div class="description__title section-title description__title1">
-            <p>
-              ANALYZE THE MARKET IN AN ORGANIZED AND PROFESSIONAL MANNER
-            </p>
-          </div>
-  
-  
-          <div class="description__image">
-            <img src="../../images/que_es_logic.gif" alt="" />
-          </div>
-  
-  
-  
-  
-  
-  
-  
-          <div class="description__cont">
-            <div class="description__cont-content">
-              <div class="description__title section-title">
-                PROFESSIONAL TRADING TOOLS
-              </div>
-  
-              <div class="description__text description__text--flex section-text">
-                <p>
-                  Optimize your results by adding the best tools to your operation
-                </p>
-              </div>
-  
-              <div class="description__button hide-for-large ">
-                <a href="#pul" class="button">Read more</a>
-              </div> 
-  
-  
+
+        <div class="description__cont">
+          <div class="description__cont-content">
+            <div class="description__title section-title gl-title3">
+              Professional Trading Tools
             </div>
-  
-            <div class="feature__image">
-              <div class="feature__image--notick">
-                No tick replay required
-              </div>
-              <img src="../../images/mockup_monitor.png" alt="" />
-            </div>     
-  
-  
-  
-            <div class="description__button hide-for-sm-md ">
+
+            <div class="description__text description__text--flex section-text">
+              <p>
+                Optimize your results by adding the best tools to your operation
+              </p>
+            </div>
+
+            <div class="description__button hide-for-large ">
               <a href="#pul" class="button">Read more</a>
-            </div>            
-  
-  
-          </div>
-  
-  
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="advantage">
-      <div class="container container--advantage">
-        <div>
-          <h2>ADVANTAGES OF LOGIC INDICATORS</h2>
-        </div>
-  
-        <div class="advantage__text headline-text">
-          Easily understand the high probability patterns offered by the market.
-        </div>
-  
-        <div class="advantage__grid">
-          <div class="advantage__item">
-            <div class="advantage__icon">
-              <img src="../../images/eye-solid.svg" alt="" />
             </div>
-  
-            <h3>Visual patterns</h3>
-  
-            <div class="section-text">
-              Easily identify breakout patterns, exhaustions and twists that we use every day in our trading, we teach them to you for free.
-            </div>
-          </div>
-  
-          <div class="advantage__item">
-            <div class="advantage__icon">
-              <img src="../../images/stopwatch-solid.svg" alt="" />
-            </div>
-  
-            <h3>Fast charging</h3>
-  
-            <div class="section-text">
-              Get the best performance on the market for a footprint. By not using tick replay you don't have to worry about your computer slowing down when loading this market data.
-            </div>
-          </div>
-  
-          <div class="advantage__item">
-            <div class="advantage__icon">
-              <img src="../../images/arrow-pointer-solid.svg" alt="" />
-            </div>
-  
-            <h3>One-click templates</h3>
-  
-            <div class="section-text">
-              Change display mode with a single click on the template panel. The indicator will not be reloaded again, so your operation is never interrupted.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="feature">
-      <div class="container container--feature">
-        <h2 id="pul" class="feature__h2">
-          Why use Logic Indicators?
-        </h2>
-  
-        <!-- <div class="feature__image">
-          <img src="./images/mockup_monitor.png" alt="" />
-        </div>         -->
-  
-        <div class="feature__image">
-          <img src="../../images/propuesta_visual.gif" alt="" />
-        </div>
-  
-        <h3 class="feature__h3">Look at the data with great detail and definition</h3>
-        <div class="feature__description section-text">
-          Unlike other indicators, Logic Indicators has in its algorithm color scales that make volume changes easy to observe.
-        </div>
-  
-        <h3 class="feature__h3">High-probability patterns</h3>
-        <div class="feature__image">
-  
-          <img src="../../images/propuesta_patrones.gif" alt="" />
-        </div>
-        <div class="feature__description section-text">
-          Easily identifying imbalance patterns, high volume or low volume is vital to analyze and execute correctly in the market.
-        </div>
-  
-        <h3 class="feature__h3">Fast charging</h3>
-        <div class="feature__image">
-          <img src="../../images/propuesta_rendimiento.gif" alt="" />
-        </div>
-        <div class="feature__description section-text">
-          The tick replay option that slows down your computer is a thing of the past, Logic Indicators tools do NOT use it, it outperforms any current tool.
-        </div>
-  
-        <h3 class="feature__h3">One-click templates</h3>
-        <div class="feature__image">
-          <img src="../../images/propuesta_preset.gif" alt="" />
-        </div>
-        <div class="feature__description section-text">
-          With the drop-down menu you can choose the template you like and instantly view it without delaying your operation.
-        </div>
-  
-        <h3 class="feature__h3">
-          Statistical analysis of the most important market metrics
-        </h3>
-        <div class="feature__image">
-          <img src="../../images/Propuesta_analytics.gif" alt="" />
-        </div>
-        <div class="feature__description section-text">
-          Never again use the words "I think it is a high volume, or low". With Logic Analytics you must click on the start point and the end point you want to statistically analyze the volume, delta and range data, with these values you will have a reference of when you can run or not.
-        </div>
-      </div>
-    </section>
-  
-    <section class="buy-section">
-      <div class="container container--feature">
-        <h2 class="buy-section__title">
-          Achieve better results with Logic Indicators
-        </h2>
-  
-        <div class="buy-section__button">
-          <a href="../../app/es/buy.html" class="button-buy-landing">Buy now</a>
-        </div>
-  
-        <div class="buy-section__image">
-          <img src="../../images/ninja-trader-logo.png" alt="" />
-        </div>
-      </div>
-    </section>
 
-    <footer class="footer">
-      <div class="container">
-        <a class="footer__logo" href="#">
-          <img src="../../images/logo_logic05.svg" />
+
+          </div>
+
+          <div class="feature__image">
+            <div class="feature__image--notick">
+              No tick replay required
+            </div>
+            <img src="../../images/landing_mockup.png" alt="" />
+          </div>
+
+
+
+          <div class="description__button hide-for-sm-md ">
+            <a href="#pul" class="button">Read more</a>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- advantages -->
+  <section class="advantage">
+    <div class="container container--advantage">
+      <div>
+        <h2 class="gl-title2">ADVANTAGES OF LOGIC INDICATORS</h2>
+      </div>
+
+      <div class="advantage__text headline-text">
+        Easily understand the high probability patterns offered by the market.
+      </div>
+
+      <div class="advantage__grid">
+        <div class="advantage__item">
+          <div class="advantage__icon">
+            <img src="../../images/eye-solid.svg" alt="" />
+          </div>
+
+          <h3>Visual patterns</h3>
+
+          <div class="section-text">
+            Easily identify breakout patterns, exhaustions and twists that we use every day in our trading, we teach
+            them to you for free.
+          </div>
+        </div>
+
+        <div class="advantage__item">
+          <div class="advantage__icon">
+            <img src="../../images/stopwatch-solid.svg" alt="" />
+          </div>
+
+          <h3>Fast charging</h3>
+
+          <div class="section-text">
+            Get the best performance on the market for a footprint. By not using tick replay you don't have to worry
+            about your computer slowing down when loading this market data.
+          </div>
+        </div>
+
+        <div class="advantage__item">
+          <div class="advantage__icon">
+            <img src="../../images/arrow-pointer-solid.svg" alt="" />
+          </div>
+
+          <h3>One-click templates</h3>
+
+          <div class="section-text">
+            Change display mode with a single click on the template panel. The indicator will not be reloaded again, so
+            your operation is never interrupted.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- why logic -->
+  <section class="feature">
+    <div class="container container--feature">
+      <h2 id="pul" class="feature__h2 gl-title2">
+        Why use Logic Indicators?
+      </h2>
+
+      <div class="feature__image">
+        <img src="../../images/propuesta_visual.gif" alt="" />
+      </div>
+
+      <h3 class="feature__h3 gl-title3">Look at the data with great detail and definition</h3>
+      <div class="feature__description section-text">
+        Unlike other indicators, Logic Indicators has in its algorithm color scales that make volume changes easy to
+        observe.
+      </div>
+
+      <h3 class="feature__h3 gl-title3">High-probability patterns</h3>
+      <div class="feature__image">
+
+        <img src="../../images/propuesta_patrones.gif" alt="" />
+      </div>
+      <div class="feature__description section-text">
+        Easily identifying imbalance patterns, high volume or low volume is vital to analyze and execute correctly in
+        the market.
+      </div>
+
+      <h3 class="feature__h3 gl-title3">Fast charging</h3>
+      <div class="feature__image">
+        <img src="../../images/propuesta_rendimiento.gif" alt="" />
+      </div>
+      <div class="feature__description section-text">
+        The tick replay option that slows down your computer is a thing of the past, Logic Indicators tools do NOT use
+        it, it outperforms any current tool.
+      </div>
+
+      <h3 class="feature__h3 gl-title3">One-click templates</h3>
+      <div class="feature__image">
+        <img src="../../images/propuesta_preset.gif" alt="" />
+      </div>
+      <div class="feature__description section-text">
+        With the drop-down menu you can choose the template you like and instantly view it without delaying your
+        operation.
+      </div>
+
+      <h3 class="feature__h3 gl-title3">
+        Statistical analysis of the most important market metrics
+      </h3>
+      <div class="feature__image">
+        <img src="../../images/landing_analitycsNew.gif" alt="" />
+      </div>
+      <div class="feature__description section-text">
+        Never again use the words "I think it is a high volume, or low". With Logic Analytics you must click on the
+        start point and the end point you want to statistically analyze the volume, delta and range data, with these
+        values you will have a reference of when you can run or not.
+      </div>
+
+
+      <h3 class="feature__h3 gl-title3">
+        Understand the market structure with the Volume Profile
+      </h3>
+      <div class="feature__image">
+        <img src="../../images/landing_volProfile.gif" alt="" />
+      </div>
+      <div class="feature__description section-text">
+        No more spending hours and hours on settings for your tools, we provide you with default templates so you can get the most out of your volume profile reading.
+      </div>
+
+      <div class="feature__image">
+        <img src="../../images/vp1.png" alt="" />
+      </div>   
+
+
+    </div>
+  </section>
+
+  <!-- buy -->
+  <section class="buy-section">
+    <div class="container container--feature">
+      <h2 class="gl-title2">
+        Achieve better results with Logic Indicators
+      </h2>
+
+      <div class="buy-section__button">
+        <a href="../../app/es/buy.html" class="button-buy-landing">Buy now</a>
+      </div>
+
+      <div class="buy-section__image">
+        <img src="../../images/ninja-trader-logo.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <a class="footer__logo" href="#">
+        <img src="../../images/logo_logic05.svg" />
+      </a>
+
+      <div class="footer__social">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <title>Facebook</title>
+            <path fill="#FFF"
+              d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
+          </svg>
         </a>
-
-        <div class="footer__social">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-              <title>Facebook</title>
-              <path
-                fill="#FFF"
-                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
-              <title>YouTube</title>
-              <path
-                fill="#FFF"
-                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
-              <title>Twitter</title>
-              <path
-                fill="#FFF"
-                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-              <title>Pinterest</title>
-              <path
-                fill="#FFF"
-                d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
-              <title>Instagram</title>
-              <path
-                fill="#FFF"
-                d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <div class="footer__links col1">
-          <a href="index.html">Logic</a>
-          <a href="indicators.html">Indicators</a>
-          <a href="buy.html">Buy</a>
-        </div>
-
-        <div class="footer__cta">
-          <a href="../php/form-contact/" class="button ">Contact</a>
-        </div>
-
-        <div class="footer__copyright">
-          &copy; Logic Indicators. All Rights Reserved. 2022
-        </div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+            <title>YouTube</title>
+            <path fill="#FFF"
+              d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+            <title>Twitter</title>
+            <path fill="#FFF"
+              d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <title>Pinterest</title>
+            <path fill="#FFF"
+              d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+            <title>Instagram</title>
+            <path fill="#FFF"
+              d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z" />
+          </svg>
+        </a>
       </div>
-    </footer>
 
+      <div class="footer__links col1">
+        <a href="index.html">Logic</a>
+        <a href="indicators.html">Indicators</a>
+        <a href="buy.html">Buy</a>
+      </div>
 
+      <div class="footer__cta">
+        <a href="../php/form-contact/" class="button ">Contact</a>
+      </div>
 
-    <script src="../js/script.js"></script>
-  </body>
+      <div class="footer__copyright">
+        &copy; Logic Indicators. All Rights Reserved. 2022
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
