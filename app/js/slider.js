@@ -13,8 +13,8 @@ let move = true;
 let imgUrl = [
   {url: "../../images/pa1.gif"},
   {url: "../../images/pa2.gif"},
+  {url: "../../images/landing_volProfile.gif"},
   {url: "../../images/landing_analitycsNew.gif"},
-  {url: "../../images/pa4.jpg"},
 ];
 
 
@@ -32,13 +32,13 @@ imgButton2.addEventListener("click", () => {
 });
 
 imgButton3.addEventListener("click", () => {
-  principal.src = "../../images/landing_analitycsNew.gif";
+  principal.src = "../../images/landing_volProfile.gif";
   move = false;
   paybutton.classList.remove("hide");
 });
 
 imgButton4.addEventListener("click", () => {
-  principal.src = "../../images/pa4.jpg";
+  principal.src = "../../images/landing_analitycsNew.gif";
   move = false;
   paybutton.classList.remove("hide");
 });

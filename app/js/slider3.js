@@ -11,7 +11,7 @@ let move3 = true;
 
 
 let imgUrl3 = [
-  {url: "../../images/an1.gif"},
+  {url: "../../images/landing_analitycsNew.gif"},
   {url: "../../images/an2.jpg"},
   {url: "../../images/an3.gif"},
   {url: "../../images/an4.jpg"},
@@ -19,7 +19,7 @@ let imgUrl3 = [
 
 
 imgButton13.addEventListener("click", () => {
-  principal3.src = "../../images/an1.gif";
+  principal3.src = "../../images/landing_analitycsNew.gif";
   move3 = false;
   paybutton3.classList.remove("hide");
 
