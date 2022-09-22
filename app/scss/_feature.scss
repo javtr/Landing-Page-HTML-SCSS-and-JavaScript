@@ -36,8 +36,8 @@
     img {
       width: 100%;
 
-      @include breakpoint-up(medium) {
-        width: $image-lg;
+      @include breakpoint-up(large) {
+        width: 90%;
       }
     }
 

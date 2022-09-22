@@ -856,7 +856,12 @@ a:hover {
   margin: 0px 25px 20px 25px;
 }
 .description__image img {
-  width: 70%;
+  width: 100%;
+}
+@media (min-width: 40em) {
+  .description__image img {
+    width: 70%;
+  }
 }
 .description__button {
   text-align: center;
@@ -1408,9 +1413,9 @@ a:hover {
 .feature__image img {
   width: 100%;
 }
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .feature__image img {
-    width: 70%;
+    width: 90%;
   }
 }
 .feature__image--notick {
