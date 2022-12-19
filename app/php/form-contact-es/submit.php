@@ -48,6 +48,15 @@ if (empty($_POST['email'])) {
     redirectWithError("Por favor ingresa tu email.");
 }
 
+$marks = array("ericjonesmyemail@gmail.com", "no-replyPaf@gmail.com", "linareds@mailfence.com",
+"no.reply.objes@gmail.com","no.reply.feedbackform@gmail.com","carlosercredit@gmail.com",
+"no-replyPlearce@gmail.com","karinaFed@aol.com","no.reply.Lom@gmail.com");
+if (in_array($_POST['email'], $marks))
+{
+    redirectWithError("");
+}
+
+
 
 if (empty($_POST['message'])) {
     redirectWithError("Please enter your message in the form.");
