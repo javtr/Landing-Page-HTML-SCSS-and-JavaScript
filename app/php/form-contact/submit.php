@@ -4,6 +4,8 @@ require_once __DIR__.'/../vendor/autoload.php';
 require_once __DIR__.'/functions.php';
 require_once __DIR__.'/config.php';
 
+
+
 session_start();
 
 // Basic check to make sure the form was submitted.
@@ -17,8 +19,12 @@ if (empty($_POST['g-recaptcha-response'])) {
     redirectWithError("Por favor completa el CAPTCHA.");
 }
 
+
+
 $recaptcha = new \ReCaptcha\ReCaptcha(CONTACTFORM_RECAPTCHA_SECRET_KEY);
 $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_REQUEST['REMOTE_ADDR']);
+
+
 
 if (!$resp->isSuccess()) {
     $errors = $resp->getErrorCodes();
@@ -49,6 +55,16 @@ if (empty($_POST['email'])) {
 }
 
 
+
+$marks = array("algo@gmail.com", "algo@mail.com");
+if (in_array($_POST['email'], $marks))
+{
+    redirectWithError("");
+}
+
+
+
+
 if (empty($_POST['message'])) {
     redirectWithError("Please enter your message in the form.");
 }
@@ -56,6 +72,7 @@ if (empty($_POST['message'])) {
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     redirectWithError("Please enter a valid email address.");
 }
+
 
 // Everything seems OK, time to send the email.
 
@@ -93,3 +110,5 @@ EOT;
 } catch (Exception $e) {
     redirectWithError("An error occurred while trying to send your message: ".$mail->ErrorInfo);
 }
+
+

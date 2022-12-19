@@ -128,8 +128,6 @@ if (!empty($_SESSION['_contact_form_success'])) {
                     <div class="g-recaptcha contact__captcha--box" data-sitekey="<?= CONTACTFORM_RECAPTCHA_SITE_KEY ?>"></div>
                   </div>
 
-
-
               <button class="btn btn-primary btn-block btn button-contact">Send Message</button>
             </form>
         </div>
