@@ -58,7 +58,7 @@ if (empty($_POST['email'])) {
 
 $marks = array("ericjonesmyemail@gmail.com", "no-replyPaf@gmail.com", "linareds@mailfence.com",
 "no.reply.objes@gmail.com","no.reply.feedbackform@gmail.com","carlosercredit@gmail.com",
-"no-replyPlearce@gmail.com","karinaFed@aol.com","no.reply.Lom@gmail.com");
+"no-replyPlearce@gmail.com","karinaFed@aol.com","no.reply.Lom@gmail.com","annaFed@crosenoutinabsi.tk");
 if (in_array($_POST['email'], $marks))
 {
     redirectWithError("");
