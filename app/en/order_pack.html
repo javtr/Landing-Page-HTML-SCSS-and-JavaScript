@@ -12,12 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="../../images/icono.ico">
-
+    <link rel="icon" href="../../images/icono.ico" />
   </head>
 
   <body>
-
     <section class="payment">
       <div class="container container--payment">
         <div class="payment__logo">
@@ -27,7 +25,7 @@
         <div class="payment__card-order">
           <div class="payment__header">
             <div class="payment__title">Order Payment</div>
-            <div  id="date" class="payment__date">-</div>
+            <div id="date" class="payment__date">-</div>
           </div>
 
           <div class="payment__content">
@@ -42,112 +40,129 @@
 
             <hr class="payment__line" />
             <div class="payment__total">
-              <p>Total: $247 Usd</p>
+              <p>Total: $397 Usd</p>
             </div>
-            
           </div>
         </div>
 
         <div class="payment__card-pay">
           <div class="payment__pay">
             <div class="payment__pay-button">
-              <a href="https://sso.teachable.com/secure/474922/checkout/4059024/logic-indicators" target="_blank" class="button-teach">Credit card</a>
+              <a
+                href="https://sso.teachable.com/secure/474922/checkout/4059024/logic-indicators"
+                target="_blank"
+                class="button-teach"
+                >Credit card</a
+              >
               <p>Developed by <span>Teachable</span></p>
             </div>
+
+
+
             <div class="payment__line"></div>
-            <div class="payment__pay-button">
+            <!-- <div class="payment__pay-button">
               <div class="paypal">
                 <div class="content">
-                    <div class="accion">
-                        <div id="smart-button-container">
-                            <div style="text-align: center;">
-                                <div id="paypal-button-container"></div>
-                            </div>
-                        </div>
-                        <script
-                            src="https://www.paypal.com/sdk/js?client-id=AVcTD2Bf47MXHQdROnmhRRug9iUXmX6ylQfZV0KdcmiRj24gnbEVp_JfJJVQBlCpTdtVUgEx0rbZtPk1"
-                            data-sdk-integration-source="button-factory"></script>
-                        <script>
-                            function initPayPalButton() {
-                                paypal.Buttons({
-                                    style: {
-                                        shape: 'rect',
-                                        color: 'blue',
-                                        layout: 'vertical',
-                                        label: 'paypal',
-                                    },
-                                    createOrder: function (data, actions) {
-
-                                        return actions.order.create({
-
-                                            purchase_units: [{ "amount": { "currency_code": "USD", "value": 247 } }]
-
-                                        });
-
-
-
-
-                                    },
-                                    onApprove: function (data, actions) {
-
-                                        return actions.order.capture().then(function (details) {
-
-
-                                            try {
-                                                var currentdate = new Date();
-                                                var datetime = "Last Sync: " + currentdate.getDate() + "/" +
-                                                    (currentdate.getMonth() + 1) +
-                                                    "/" +
-                                                    currentdate.getFullYear() +
-                                                    " @ " +
-                                                    currentdate.getHours() +
-                                                    ":" +
-                                                    currentdate.getMinutes() +
-                                                    ":" +
-                                                    currentdate.getSeconds() +
-
-                                                    "  -- Pack --  " +
-
-                                                    JSON.stringify(details, null, 2);
-
-
-                                                // (A) CREATE BLOB OBJECT
-                                                var myBlob = new Blob([datetime], { type: "text/plain" });
-                                                // (B) FORM DATA
-                                                var data = new FormData();
-                                                data.append("upfile", myBlob);
-                                                // (C) AJAX UPLOAD TO SERVER
-                                                fetch("../../inserv/3b-upload.php", {
-                                                    method: "POST",
-                                                    body: data,
-                                                })
-                                                    .then((res) => { return res.text(); })
-                                                    .then((txt) => { console.log(txt); });
-                                            } catch (error) {
-
-                                            }
-
-
-
-
-
-                                            // alert('Transacción exitosa by:  ' + details.payer.name.given_name + '! \n Aceptar para continuar el proceso');
-                                            window.location.href = "../php/form-licence/";
-                                        });
-                                    },
-                                    onError: function (err) {
-                                    }
-                                }).render('#paypal-button-container');
-                            }
-                            initPayPalButton();
-                        </script>
+                  <div class="accion">
+                    <div id="smart-button-container">
+                      <div style="text-align: center">
+                        <div id="paypal-button-container"></div>
+                      </div>
                     </div>
+                    <script
+                      src="https://www.paypal.com/sdk/js?client-id=AVcTD2Bf47MXHQdROnmhRRug9iUXmX6ylQfZV0KdcmiRj24gnbEVp_JfJJVQBlCpTdtVUgEx0rbZtPk1"
+                      data-sdk-integration-source="button-factory"
+                    ></script>
+                    <script>
+                      function initPayPalButton() {
+                        paypal
+                          .Buttons({
+                            style: {
+                              shape: "rect",
+                              color: "blue",
+                              layout: "vertical",
+                              label: "paypal",
+                            },
+                            createOrder: function (data, actions) {
+                              return actions.order.create({
+                                purchase_units: [
+                                  {
+                                    amount: {
+                                      currency_code: "USD",
+                                      value: 247,
+                                    },
+                                  },
+                                ],
+                              });
+                            },
+                            onApprove: function (data, actions) {
+                              return actions.order
+                                .capture()
+                                .then(function (details) {
+                                  try {
+                                    var currentdate = new Date();
+                                    var datetime =
+                                      "Last Sync: " +
+                                      currentdate.getDate() +
+                                      "/" +
+                                      (currentdate.getMonth() + 1) +
+                                      "/" +
+                                      currentdate.getFullYear() +
+                                      " @ " +
+                                      currentdate.getHours() +
+                                      ":" +
+                                      currentdate.getMinutes() +
+                                      ":" +
+                                      currentdate.getSeconds() +
+                                      "  -- Pack --  " +
+                                      JSON.stringify(details, null, 2);
+                                    // (A) CREATE BLOB OBJECT
+                                    var myBlob = new Blob([datetime], {
+                                      type: "text/plain",
+                                    });
+                                    // (B) FORM DATA
+                                    var data = new FormData();
+                                    data.append("upfile", myBlob);
+                                    // (C) AJAX UPLOAD TO SERVER
+                                    fetch("../../inserv/3b-upload.php", {
+                                      method: "POST",
+                                      body: data,
+                                    })
+                                      .then((res) => {
+                                        return res.text();
+                                      })
+                                      .then((txt) => {
+                                        console.log(txt);
+                                      });
+                                  } catch (error) {}
+                                  // alert('Transacción exitosa by:  ' + details.payer.name.given_name + '! \n Aceptar para continuar el proceso');
+                                  window.location.href = "../php/form-licence/";
+                                });
+                            },
+                            onError: function (err) {},
+                          })
+                          .render("#paypal-button-container");
+                      }
+                      initPayPalButton();
+                    </script>
+                  </div>
                 </div>
-            </div>
-
-
-            </div>
+              </div>
+            </div> -->
+          
+                      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          
+          
           </div>
+
+
+
+
 
           <div class="payment__sep-line"></div>
 
@@ -156,8 +171,13 @@
               <img src="../../images/paypal.png" alt="" />
             </div>
             <div class="payment__description">
-              <p>* Pay by debit or credit card without creating a Paypal account.</p>
-              <p>* All transactions are made securely through the Paypal or Teachable platforms. </p>
+              <p>
+                * Pay by debit or credit card without creating a Paypal account.
+              </p>
+              <p>
+                * All transactions are made securely through the Paypal or
+                Teachable platforms.
+              </p>
             </div>
           </div>
         </div>
